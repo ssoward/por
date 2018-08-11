@@ -1,0 +1,13 @@
+.idea/
+*.iml
+atlassian-ide-plugin.xml
+.DS_Store
+atlassian-ide-plugin.xml
+
+target/
+node_modules/
+coverage/
+*.log
+logs/
+
+
