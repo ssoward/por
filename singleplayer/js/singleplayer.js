@@ -4,17 +4,13 @@ var accessToken = '8aeb6aa949835168b5d8c1b863227828';
 var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
 var userId = 46710998;
 
-
-!function () {
-    var image = Math.floor(Math.random() * 3)+1;
-    var imgSrc = '/singleplayer/assets/loading-'+image+'.jpg';
+function addImage(imgScr) {
     var doc = document.getElementById("image");
     var x = document.createElement("IMG");
-    x.setAttribute("src", imgSrc);
+    x.setAttribute("src", imgScr);
     x.setAttribute("width", "100%");
     doc.appendChild(x);
-    document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
-}();
+}
 
 function getAlbum(data) {
     var albumId = data.albumId;
