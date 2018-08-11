@@ -1,0 +1,111 @@
+<html>
+<head>
+    <script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+</head>
+<body>
+<div id="myElement"><img src="https://cdn.jwplayer.com/thumbs/jxRkXPcv-720.jpg"> </div>
+
+
+<script type="text/javascript">
+
+    var playlist = {
+        title: "Ad Test",
+        kind: "MANUAL",
+        playlist: [
+            {
+                "mediaid": "jxRkXPcv",
+                "description": "",
+                "pubdate": 1505247173,
+                "title": "Xclear Ad Journey",
+                "image": "https://cdn.jwplayer.com/thumbs/jxRkXPcv-720.jpg",
+                "feedid": "HAjjCz7L",
+                "sources": [
+                    {
+                        "type": "application/vnd.apple.mpegurl",
+                        "file": "https://cdn.jwplayer.com/manifests/jxRkXPcv.m3u8"
+                    },
+                    {
+                        "width": 320,
+                        "height": 180,
+                        "type": "video/mp4",
+                        "file": "https://cdn.jwplayer.com/videos/jxRkXPcv-QvKL4wJR.mp4",
+                        "label": "180p"
+                    },
+                    {
+                        "width": 480,
+                        "height": 270,
+                        "type": "video/mp4",
+                        "file": "https://cdn.jwplayer.com/videos/jxRkXPcv-ZJW4SmGI.mp4",
+                        "label": "270p"
+                    },
+                    {
+                        "width": 720,
+                        "height": 406,
+                        "type": "video/mp4",
+                        "file": "https://cdn.jwplayer.com/videos/jxRkXPcv-BWCkJFIt.mp4",
+                        "label": "406p"
+                    },
+                    {
+                        "width": 1280,
+                        "height": 720,
+                        "type": "video/mp4",
+                        "file": "https://cdn.jwplayer.com/videos/jxRkXPcv-1hLgJZMw.mp4",
+                        "label": "720p"
+                    },
+                    {
+                        "type": "audio/mp4",
+                        "file": "https://cdn.jwplayer.com/videos/jxRkXPcv-RJcS9BJv.m4a",
+                        "label": "AAC Audio"
+                    }
+                ],
+                "tracks": [
+                    {
+                        "kind": "thumbnails",
+                        "file": "https://cdn.jwplayer.com/strips/jxRkXPcv-120.vtt"
+                    }
+                ],
+                "link": "https://cdn.jwplayer.com/previews/jxRkXPcv",
+                "duration": 224
+            },
+            {
+                description: "Carlos Santana",
+                tags: "Black Magic Woman PREVIEW",
+                title: "Black Magic Woman PREVIEW",
+                sources: [
+                    {
+                        title: "Black Magic Woman",
+                        file: 'https://player.vimeo.com/external/232919467.hd.mp4?s=c2001694a03773847fcf2e520119293131fa2f91&profile_id=175'
+
+                    },
+                ]
+            },
+            {
+                description: "Chris Robinson, the soul-wrenching vocalist from iconic band, the Black Crowes, explains the origin of their cover of the Otis Redding classic, \"Hard to Handle\" and how it introduced the song to a new generation.",
+                tags: "Hard To Handle by The Black Crowes",
+                title: "Hard To Handle by The Black Crowes",
+                sources: [
+                    {
+                        title: "Black Crowes",
+                        file: 'https://player.vimeo.com/external/232901705.hd.mp4?s=8ccc2c8525f4269977f722595d1d60087b28c3f3&profile_id=175'
+
+                    },
+                ]
+            }
+        ]
+    };
+
+    jwplayer('myElement').setup({
+        // playlist: playlist,
+        file: 'https://player.vimeo.com/external/232919467.hd.mp4?s=c2001694a03773847fcf2e520119293131fa2f91&profile_id=175',
+        autostart: "viewable",
+        // controls: false,
+        aspectratio: '16:9',
+        width: '100%',
+        "advertising": {
+            "client": "vast",
+            "tag": "http://adserver.com/vastTag.xml"
+        }
+    });
+</script>
+</body>
+</html>

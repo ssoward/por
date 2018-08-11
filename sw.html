@@ -1,0 +1,222 @@
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 20%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+</style>
+
+<div id="adplayer">
+    <div id="player">
+        <div id="image"></div>
+    </div>
+</div>
+<!-- Swiper -->
+
+<!--<div class="swiper-container">-->
+    <!--<div id="swiper-playlist" class="swiper-wrapper"> </div>-->
+     <!--Add Pagination-->
+    <!--<div class="swiper-pagination"></div>-->
+     <!--Add Arrows-->
+    <!--<div class="swiper-button-next"></div>-->
+    <!--<div class="swiper-button-prev"></div>-->
+<!--</div>-->
+
+<!-- Swiper JS -->
+<!--<script src="js/swiper.min.js"></script>-->
+
+<!-- Initialize Swiper -->
+<script>
+
+</script>
+
+<script>
+    var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
+    var accessToken = '8aeb6aa949835168b5d8c1b863227828';
+    var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
+    var userId = 46710998;
+
+    /*   _____    _ _ _     _   _
+        | ____|__| (_) |_  | | | | ___ _ __ ___
+        |  _| / _` | | __| | |_| |/ _ \ '__/ _ \
+        | |__| (_| | | |_  |  _  |  __/ | |  __/
+        |_____\__,_|_|\__| |_| |_|\___|_|  \___|
+     */
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+    // var albumId = 5305619;//greatest hits
+    var albumId = 5299859;//alternative
+    var firstVideoId = 232900313;
+    var showAd1Else2 = true;
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+
+
+    !function(){
+        var vimeoUrl = 'https://api.vimeo.com/users/'+userId+'/videos/'+firstVideoId+'?client_id='+clientId;
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+                var playJson = JSON.parse(e.responseText);
+                var vid =  {
+                    description: playJson.description,
+                    tags: playJson.tags,
+                    title: playJson.name,
+                    image: playJson.pictures.sizes[3].link,
+                    images: playJson.pictures,
+                    sources: [
+                        {
+                            title: playJson.name,
+                            file: playJson.files[4].link
+                        },
+                    ]};
+
+                addImage(vid.image);
+                // getAlbum(albumId, vid);
+                //skip carousel
+                playlist.playlist.unshift(vid);
+                loadPlaylistDisplay(playlist);
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+    }();
+
+    function addImage(imgScr) {
+        var doc = document.getElementById("image");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", imgScr);
+        x.setAttribute("width", "100%");
+        doc.appendChild(x);
+    }
+
+    function getAlbum(albumId, firstVideo) {
+        var vimeoUrl = 'https://api.vimeo.com/users/46710998/albums/'+albumId+'/videos?client_id=5b2edc639552e6c9b16335e31c1b0e86';
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+
+                var playJson = JSON.parse(e.responseText);
+                playJson.data.forEach( function(pl){
+                    var vid =  {
+                        description: pl.description,
+                        tags: pl.tags,
+                        title: pl.name,
+                        image: pl.pictures.sizes[3].link,
+                        images: pl.pictures,
+                        sources: [
+                            {
+                                title: pl.name,
+                                file: pl.files[4].link
+                            },
+                        ]};
+                    playlist.playlist.push(vid);
+                });
+
+                //Set first song
+                playlist.playlist.unshift(firstVideo);
+                loadPlaylistDisplay(playlist, true);
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+    };
+
+    var master = [];
+
+    function loadPlaylistDisplay(playlist, skipCarousel){
+        master = playlist;
+
+        var m =jwplayer("player").setup({
+            playlist: playlist,
+            advertising: {
+                client: "vast",
+                schedule: showAd1Else2 ? "assets/vmap.xml": "/ad/assets/vmap2.xml"
+            },
+            autostart: false
+        });
+
+        if(!skipCarousel) {
+            var doc = document.getElementById("swiper-playlist");
+            var html = '';
+            var count = 1;
+
+            playlist.playlist.forEach(function (pl) {
+                html = html.concat(
+                    '<div style="width: 230px;" class="swiper-slide" id="shelf-item-2" class="jw-widget-item">' +
+                    '    <div style="cursor: pointer" data-mediaid="' + count + '" id="gallery-item-' + count + '" class="jw-content-image">                                    ' +
+                    '    <img width="100%" src="' + pl.images.sizes[2].link + '"/>                                         ' +
+                    '    </div>                                                            ' +
+                    '</div>                                                                ');
+                count = count + 1;
+            });
+            doc.innerHTML = html;
+
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                    clickable: true,
+                },
+                navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev',},
+            });
+
+            for (var i = 1; i < count; i++) {
+                var str = 'gallery-item-' + i;
+                var e3 = document.getElementById(str);
+                e3.addEventListener("click", function (w) {
+                    var index = this.dataset.mediaid - 1;
+                    var t = master.playlist[index];
+                    // master.playlist.splice(index, 1);
+                    // master.playlist.unshift(t);
+                    m.load(t);
+                    m.on("playlistItem", function () {
+                        m.play();
+                    })
+                });
+            }
+        }else{
+
+        }
+    }
+
+</script>

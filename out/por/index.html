@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/PORockController.js"></script>
+    <!--<script src="js/developer.min.js"></script>-->
+    <!--<script charset="utf-8" src="//ssl.p.jwpcdn.com/player/v/8.4.2/jwplayer.core.controls.js"></script>-->
+    <style>
+        .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight {
+            width: 355px;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+<div ng-app = "porock" ng-controller="PORockController">
+    <h2>{{playlist.title}}</h2>
+    <div> {{selectedVideo.link}}</div>
+
+    <!--<script src="https://content.jwplatform.com/players/0lsXWRrh-fM9q0CmU.js"></script>-->
+    <!--<script src="https://content.jwplatform.com/players/wNxjiUxP-fM9q0CmU.js"></script>-->
+    <!--<div style="position:relative; padding-bottom:56.25%; overflow:hidden;"><iframe src="https://content.jwplatform.com/players/0lsXWRrh-fM9q0CmU.html" width="100%" height="100%" frameborder="0" scrolling="auto" allowfullscreen style="position:absolute;"></iframe></div>-->
+    <!--<div style="position:relative; padding-bottom:56.25%; overflow:hidden;"><iframe src="https://content.jwplatform.com/players/wNxjiUxP-fM9q0CmU.html" width="100%" height="100%" frameborder="0" scrolling="auto" allowfullscreen style="position:absolute;"></iframe></div>-->
+
+    <div ng-repeat="vid in playlist.playlist">
+        <!--<img src="{{vid.image}}"/>-->
+        <!--{{vid.title}}-->
+    </div>
+</div>
+
+
+
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+<!--<script src="//content.jwplatform.com/players/9npLYe7W-7bKzv5u6.js"> </script>-->
+<!--<script src="https://content.jwplatform.com/players/wNxjiUxP-fM9q0CmU.js"></script>-->
+<script type="text/javascript">
+
+    // Start Playlist Overlay Example
+    function initInPlayer(playlistId) {
+        window.jwplayer('in-player-demo').setup({
+            displaytitle: true,
+            logo: false,
+            playlist: 'https://cdn.jwplayer.com/v2/playlists/' + playlistId
+            // By default, the parameter visualplaylist is true.
+        });
+    };
+
+    initInPlayer('6tYY3mSy');
+    // End Playlist Overlay Example
+
+    // Start Playlist Shelf Example
+    function initOutPlayer(playlistId) {
+        var playerInstance = jwplayer('out-player-demo')
+            .setup({
+                displaytitle: false,
+                logo: false,
+                autostart: false,
+                playlist: 'https://cdn.jwplayer.com/v2/playlists/' + playlistId,
+                width: '100%',
+                aspectratio: '16:9',
+                visualplaylist: false
+            });
+
+        initPlaylist(playerInstance);
+    }
+
+    function initPlaylist(player) {
+        $.ajax(player.getPlaylist()).then(function(data) {
+            var playlistWrapper = $('.playlist-wrapper');
+            var playlistTemplate = Handlebars.compile($('#out-player-playlist-template').html());
+            playlistWrapper.html(playlistTemplate(data));
+
+            playlistWrapper.on('click', '.playlist-item-link', setVideo.bind(this, data.playlist, player));
+            player.on('playlistItem', setActive);
+        });
+    }
+
+    function setVideo(playlist, player, e) {
+        var currentVideo = $(e.target).closest('a').data('mediaid');
+        var videoIndex = playlist.findIndex(function(video) {
+            return currentVideo === video.mediaid;
+        });
+
+        e.preventDefault();
+
+        player.playlistItem(videoIndex);
+    }
+
+    function setActive(e) {
+        var id = e.item.mediaid;
+
+        $('.playlist-item-link').removeClass('active')
+            .filter(function(item) {
+                return $(this).data('mediaid') === id;
+            })
+            .addClass('active');
+    }
+
+    initOutPlayer('6tYY3mSy');
+    // End Playlist Shelf Example
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "widgets": [
+    {
+      "widgetDivId": "jw-widget-demo-spotlight",
+      "playlist": "https://cdn.jwplayer.com/v2/playlists/GpAtmZZY",
+      "videoPlayerId": "widget-video-player",
+      "header": "Summer of Loggins",
+      "textColor": "#111",
+      "backgroundColor": "rgba(71,84,112,.25)",
+      "iconColor": "#fff",
+      "widgetLayout": "spotlight",
+      "widgetSize": "large"
+    },
+    {
+      "widgetDivId": "jw-widget-demo-shelf",
+      "playlist": "https://cdn.jwplayer.com/v2/playlists/kmRHFfHr",
+      "videoPlayerId": "widget-video-player",
+      "header": "Greatest Hits",
+      "textColor": "#111",
+      "backgroundColor": "rgba(71,84,112,.25)",
+      "iconColor": "#fff",
+      "widgetLayout": "shelf",
+      "widgetSize": "large"
+    }
+  ]
+}

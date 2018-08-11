@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+    <style>
+        .player-demo-wrapper p {
+            font-size: 1em;
+        }
+
+        .player #out-player-demo {
+            margin: 0;
+        }
+
+        .playlist-wrapper {
+            overflow: auto;
+            background: black;
+        }
+
+        .playlist-wrapper > p {
+            padding: 1em 0.5em 0;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .playlist {
+            display: flex;
+            width: 100%;
+            list-style: none;
+        }
+
+        .playlist li {
+            object-fit: cover;
+        }
+
+        .playlist li a {
+            /*height: 100%;*/
+            text-decoration: none;
+            color: white;
+            padding: 1em 0.5em;
+            display: block;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .playlist-thumbnail-wrapper {
+            position: relative;
+            color: white;
+            font-weight: 400;
+            text-shadow: 0 0 7px #555;
+            width: 200px;
+        }
+
+        .playlist-duration {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .playlist-item-playing {
+            color: transparent;
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 150ms ease-in-out all;
+        }
+
+        a.active .playlist-item-playing {
+            color: white;
+            display: block;
+        }
+
+        .playlist-thumbnail {
+            width: 100%;
+        }
+
+        .demo-layout-vertical .demo-layout-code {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        @media (max-width: 760px) {
+            .player-demo-wrapper.demo-toggle-on, .playlist {
+                display: block;
+            }
+
+            .playlist-thumbnail-wrapper {
+                width: 50%;
+                min-width: 12em;
+                margin-right: 1em;
+            }
+
+            .playlist li a {
+                display: flex;
+                align-items: center;
+                padding: 1em;
+            }
+
+            .playlist-thumbnail {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="player-demo-wrappera" id="out-player">
+    <div class="player">
+        <div id="out-player-demo"></div>
+    </div>
+    <div id="player-playlist" class="playlist-wrapper"></div>
+</div>
+
+<template id="out-player-playlist-template">
+    <ul class="playlist">
+        {{#each playlist}}
+        <li class="playlist-item">
+            <a class="playlist-item-link{{#if @first}} active{{/if}}" href="{{link}}" data-mediaid="{{mediaid}}">
+                <div class="playlist-thumbnail-wrapper">
+                    <!--<span class="playlist-duration">00:{{duration}}</span>-->
+                    <div class="playlist-item-playing">Now Playing</div>
+                    <img class="playlist-thumbnail" src="{{image}}" />
+                </div>
+                <!--<p>{{title}}</p>-->
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</template>
+<!--Init the JWPlayer-->
+</body>
+<script>
+    // Start Playlist Shelf Example
+    function initOutPlayer(playlistId) {
+        var playerInstance = jwplayer('out-player-demo')
+            .setup({
+                displaytitle: false,
+                logo: false,
+                autostart: false,
+                playlist: 'https://cdn.jwplayer.com/v2/playlists/' + playlistId,
+                width: '100%',
+                aspectratio: '16:9',
+                visualplaylist: false
+            });
+
+        initPlaylist(playerInstance);
+    }
+
+    function initPlaylist(player) {
+        $.ajax(player.getPlaylist()).then(function(data) {
+            var playlistWrapper = $('.playlist-wrapper');
+            var playlistTemplate = Handlebars.compile($('#out-player-playlist-template').html());
+            playlistWrapper.html(playlistTemplate(data));
+
+            playlistWrapper.on('click', '.playlist-item-link', setVideo.bind(this, data.playlist, player));
+            player.on('playlistItem', setActive);
+        });
+    }
+
+    function setVideo(playlist, player, e) {
+        var currentVideo = $(e.target).closest('a').data('mediaid');
+        var videoIndex = playlist.findIndex(function(video) {
+            return currentVideo === video.mediaid;
+        });
+
+        e.preventDefault();
+
+        player.playlistItem(videoIndex);
+    }
+
+    function setActive(e) {
+        var id = e.item.mediaid;
+
+        $('.playlist-item-link').removeClass('active')
+            .filter(function(item) {
+                return $(this).data('mediaid') === id;
+            })
+            .addClass('active');
+    }
+
+    initOutPlayer('kmRHFfHr');
+    // End Playlist Shelf Example
+</script>
+</html>

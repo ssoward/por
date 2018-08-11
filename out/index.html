@@ -1,0 +1,298 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">-->
+    <script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+</head>
+<header>
+    <!--<h3>Professor of Rock 0011</h3>-->
+</header>
+<div id="video-player-container">
+    <div id="widget-video-player"></div>
+</div>
+
+<div id="multiple-widgets">
+    <div class="horizontal-rule"></div>
+    <div id="jw-widget-demo-spotlight" class="jw-widget">
+        <div class="jw-widget-title"></div>
+        <div class="jw-widget-content"></div>
+        <div class="jw-widget-arrows">
+            <div class="arrow previous disabled">
+            </div>
+            <div class="arrow next">
+                <svg class="icon" width="61.3px" height="100px" viewBox="625.1 564.5 61.3 100" style="enable-background:new 625.1 564.5 61.3 100;" xml:space="preserve" fill="#fff">
+        	<path d="M644,567.7l39.1,39c4.3,4.3,4.3,11.3,0,15.5l-39.1,39c-4.3,4.3-11.3,4.3-15.7,0c-4.3-4.3-4.3-11.3,0-15.5
+        	l31.3-31.2l-31.3-31.2c-4.3-4.3-4.3-11.3,0-15.5C632.6,563.4,639.6,563.4,644,567.7z"/>
+        </svg>
+            </div>
+        </div>
+    </div>
+    <div id="jw-widget-demo-shelf" class="jw-widget">
+        <div class="jw-widget-title"></div>
+        <div class="jw-widget-content"></div>
+        <div class="jw-widget-arrows">
+            <div class="arrow previous disabled">
+                <svg class="icon" width="61.1px" height="100px" viewBox="622.7 564.5 61.1 100" fill="#fff" xml:space="preserve">
+          <path d="M680.6,567.7c4.3,4.3,4.3,11.3,0,15.5l-31.2,31.2l31.2,31.2c4.3,4.3,4.3,11.3,0,15.5c-4.3,4.3-11.3,4.3-15.7,0
+          l-39-39c-4.3-4.3-4.3-11.3,0-15.5l39.1-39C669.3,563.4,676.3,563.4,680.6,567.7z"/>
+        </svg>
+            </div>
+            <div class="arrow next">
+                <svg class="icon" width="61.3px" height="100px" viewBox="625.1 564.5 61.3 100" style="enable-background:new 625.1 564.5 61.3 100;" xml:space="preserve" fill="#fff">
+          <path d="M644,567.7l39.1,39c4.3,4.3,4.3,11.3,0,15.5l-39.1,39c-4.3,4.3-11.3,4.3-15.7,0c-4.3-4.3-4.3-11.3,0-15.5
+          l31.3-31.2l-31.3-31.2c-4.3-4.3-4.3-11.3,0-15.5C632.6,563.4,639.6,563.4,644,567.7z"/>
+        </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="jw-widget/js/jw-widget-min.js"></script>
+<script>
+    $(document).ready(function(){
+        if ($(window).width() < 1024) {
+            $('.jw-widget').removeClass('large');
+            $('.jw-widget').addClass('medium');
+        }
+        if ($(window).width() < 640) {
+            $('.jw-widget').removeClass('large');
+            $('.jw-widget').addClass('small');
+        }
+    });
+</script>
+<style>
+    .jw-widget,.jw-widget.large {
+        width: 1030px
+    }
+
+    .jw-widget {
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 20px 30px 30px;
+        height: 290px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        text-align: left
+    }
+
+    .jw-widget.medium {
+        width: 800px
+    }
+
+    .jw-widget.small {
+        width: 450px
+    }
+
+    .jw-widget .jw-widget-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 15px
+    }
+
+    .jw-widget .jw-widget-content {
+        display: inline-flex;
+        transition: all .7s ease-in-out;
+        position: relative;
+        left: 0;
+        padding: 0
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item {
+        width: 284px;
+        height: 160px;
+        margin: 5px;
+        box-sizing: border-box;
+        background-color: #000;
+        cursor: pointer
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+        margin: 10px 15px 0 0
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image {
+        height: 100%;
+        overflow: hidden
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        transition: opacity .3s ease-in-out
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image:hover {
+        opacity: .7
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item:hover .jw-content-title {
+        text-decoration: underline
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        z-index: 10;
+        -webkit-filter: drop-shadow(-1px -1px 4px #424242);
+        filter: drop-shadow(-1px -1px 4px #424242)
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button svg {
+        width: 50px;
+        height: 50px
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button.fade {
+        animation: fade .6s .4s backwards
+    }
+
+    .jw-widget .jw-widget-arrows {
+        z-index: 10
+    }
+
+    .jw-widget .jw-widget-arrows .arrow {
+        width: 42px;
+        height: 100%;
+        cursor: pointer;
+        top: 58px;
+        position: absolute
+    }
+
+    .jw-widget .jw-widget-arrows .arrow .icon {
+        width: 12px;
+        position: relative;
+        top: 12%;
+        -webkit-filter: drop-shadow(-1px -1px 9px #424242);
+        filter: drop-shadow(-1px -1px 9px #424242)
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.previous {
+        left: 0
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.next {
+        right: 0
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.next .icon {
+        right: -14px
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.previous .icon {
+        left: 10px
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.disabled {
+        cursor: auto;
+        opacity: .5
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.disabled .icon {
+        -webkit-filter: none;
+        filter: none
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .jw-widget {
+            width:800px
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .jw-widget {
+            width:455px
+        }
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item {
+        transition: all .7s ease-in-out
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight {
+        width: 355px;
+        height: 200px;
+        position: relative
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight:hover .jw-content-title {
+        text-decoration: none
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight .jw-content-title {
+        position: absolute;
+        bottom: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+        max-width: 300px;
+        text-shadow: 1px 1px 2px #333;
+        color: #fff
+    }
+
+    .jw-shelf {
+        margin-top: 20px
+    }
+
+    .jw-widget.shelf {
+        height: 240px
+    }
+
+    .jw-widget.shelf.small {
+        height: 200px
+    }
+
+    .jw-widget.shelf .jw-widget-content {
+        height: 230px
+    }
+
+    .jw-widget.shelf .jw-widget-content .jw-widget-item {
+        width: 230px;
+        height: 130px;
+        margin: 0 10px 0 0
+    }
+
+    .jw-widget.shelf.small .jw-widget-item {
+        width: 180px;
+        height: 103px
+    }
+
+    .jw-widget.shelf .jw-widget-arrows .arrow {
+        top: 54px
+    }
+
+    .jw-widget.shelf .jw-widget-arrows .arrow .icon {
+        top: 6%
+    }
+
+    .jw-widget.shelf.small .jw-widget-arrows .arrow .icon {
+        top: 2%
+    }
+
+</style>
+<script type="text/javascript">
+
+    jwplayer('widget-video-player').setup({
+        // playlist: 'https://cdn.jwplayer.com/v2/media/8TbJTFy5',
+        playlist: 'https://cdn.jwplayer.com/v2/playlists/GpAtmZZY',
+        autostart: false,
+        aspectratio: '16:9',
+        width: '100%'
+    });
+
+</script>

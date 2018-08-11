@@ -1,0 +1,473 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
+    <!--Paid player-->
+    <!--<script src="//content.jwplatform.com/libraries/ZBv8yquY.js"> </script>-->
+    <script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+</head>
+<header>
+    <!--<h3>Professor of Rock 0011</h3>-->
+</header>
+<div id="video-player-container">
+    <div id="widget-video-player"></div>
+</div>
+
+<div id="multiple-widgets">
+    <div class="horizontal-rule"></div>
+    <!--<div id="jw-widget-demo-spotlight" class="jw-widget">-->
+    <!--<div class="jw-widget-title"></div>-->
+    <!--<div class="jw-widget-content"></div>-->
+    <!--<div class="jw-widget-arrows">-->
+    <!--<div class="arrow previous disabled">-->
+    <!--</div>-->
+    <!--<div class="arrow next">-->
+    <!--<svg class="icon" width="61.3px" height="100px" viewBox="625.1 564.5 61.3 100" style="enable-background:new 625.1 564.5 61.3 100;" xml:space="preserve" fill="#fff">-->
+    <!--<path d="M644,567.7l39.1,39c4.3,4.3,4.3,11.3,0,15.5l-39.1,39c-4.3,4.3-11.3,4.3-15.7,0c-4.3-4.3-4.3-11.3,0-15.5 l31.3-31.2l-31.3-31.2c-4.3-4.3-4.3-11.3,0-15.5C632.6,563.4,639.6,563.4,644,567.7z"/>-->
+    <!--</svg>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div id="jw-widget-demo-shelf" class="jw-widget">
+        <div class="jw-widget-title"></div>
+        <div class="jw-widget-content"></div>
+        <div class="jw-widget-arrows">
+            <div class="arrow previous disabled">
+                <svg class="icon" width="61.1px" height="100px" viewBox="622.7 564.5 61.1 100" fill="#fff" xml:space="preserve">
+          <path d="M680.6,567.7c4.3,4.3,4.3,11.3,0,15.5l-31.2,31.2l31.2,31.2c4.3,4.3,4.3,11.3,0,15.5c-4.3,4.3-11.3,4.3-15.7,0 l-39-39c-4.3-4.3-4.3-11.3,0-15.5l39.1-39C669.3,563.4,676.3,563.4,680.6,567.7z"/>
+        </svg>
+            </div>
+            <div class="arrow next">
+                <svg class="icon" width="61.3px" height="100px" viewBox="625.1 564.5 61.3 100" style="enable-background:new 625.1 564.5 61.3 100;" xml:space="preserve" fill="#fff">
+          <path d="M644,567.7l39.1,39c4.3,4.3,4.3,11.3,0,15.5l-39.1,39c-4.3,4.3-11.3,4.3-15.7,0c-4.3-4.3-4.3-11.3,0-15.5 l31.3-31.2l-31.3-31.2c-4.3-4.3-4.3-11.3,0-15.5C632.6,563.4,639.6,563.4,644,567.7z"/>
+        </svg>
+            </div>
+        </div>
+    </div>
+    <div id="jw-widget-demo-shelf-2" class="jw-widget">
+        <div class="jw-widget-title"></div>
+        <div class="jw-widget-content"></div>
+        <div class="jw-widget-arrows">
+            <div class="arrow previous disabled">
+                <svg class="icon" width="61.1px" height="100px" viewBox="622.7 564.5 61.1 100" fill="#fff" xml:space="preserve">
+          <path d="M680.6,567.7c4.3,4.3,4.3,11.3,0,15.5l-31.2,31.2l31.2,31.2c4.3,4.3,4.3,11.3,0,15.5c-4.3,4.3-11.3,4.3-15.7,0 l-39-39c-4.3-4.3-4.3-11.3,0-15.5l39.1-39C669.3,563.4,676.3,563.4,680.6,567.7z"/>
+        </svg>
+            </div>
+            <div class="arrow next">
+                <svg class="icon" width="61.3px" height="100px" viewBox="625.1 564.5 61.3 100" style="enable-background:new 625.1 564.5 61.3 100;" xml:space="preserve" fill="#fff">
+          <path d="M644,567.7l39.1,39c4.3,4.3,4.3,11.3,0,15.5l-39.1,39c-4.3,4.3-11.3,4.3-15.7,0c-4.3-4.3-4.3-11.3,0-15.5 l31.3-31.2l-31.3-31.2c-4.3-4.3-4.3-11.3,0-15.5C632.6,563.4,639.6,563.4,644,567.7z"/>
+        </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        if ($(window).width() < 1024) {
+            $('.jw-widget').removeClass('large');
+            $('.jw-widget').addClass('medium');
+        }
+        if ($(window).width() < 640) {
+            $('.jw-widget').removeClass('large');
+            $('.jw-widget').addClass('small');
+        }
+    });
+</script>
+<style>
+    .jw-widget,.jw-widget.large {
+        /*width: 1030px*/
+    }
+
+    .jw-widget {
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 20px 30px 30px;
+        height: 290px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        text-align: left
+    }
+
+    .jw-widget.medium {
+        /*width: 800px*/
+    }
+
+    .jw-widget.small {
+        /*width: 450px*/
+    }
+
+    .jw-widget .jw-widget-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 15px
+    }
+
+    .jw-widget .jw-widget-content {
+        display: inline-flex;
+        transition: all .7s ease-in-out;
+        position: relative;
+        left: 0;
+        padding: 0
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item {
+        width: 284px;
+        height: 160px;
+        margin: 5px;
+        box-sizing: border-box;
+        background-color: #000;
+        cursor: pointer
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+        margin: 10px 15px 0 0
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image {
+        height: 100%;
+        overflow: hidden
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        transition: opacity .3s ease-in-out
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item .jw-content-image:hover {
+        opacity: .7
+    }
+
+    .jw-widget .jw-widget-content .jw-widget-item:hover .jw-content-title {
+        text-decoration: underline
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        z-index: 10;
+        -webkit-filter: drop-shadow(-1px -1px 4px #424242);
+        filter: drop-shadow(-1px -1px 4px #424242)
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button svg {
+        width: 50px;
+        height: 50px
+    }
+
+    .jw-widget .jw-widget-content .jw-play-button.fade {
+        animation: fade .6s .4s backwards
+    }
+
+    .jw-widget .jw-widget-arrows {
+        z-index: 10
+    }
+
+    .jw-widget .jw-widget-arrows .arrow {
+        width: 42px;
+        height: 100%;
+        cursor: pointer;
+        top: 58px;
+        position: absolute
+    }
+
+    .jw-widget .jw-widget-arrows .arrow .icon {
+        width: 12px;
+        position: relative;
+        top: 12%;
+        -webkit-filter: drop-shadow(-1px -1px 9px #424242);
+        filter: drop-shadow(-1px -1px 9px #424242)
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.previous {
+        left: 0
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.next {
+        right: 0
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.next .icon {
+        right: -14px
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.previous .icon {
+        left: 10px
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.disabled {
+        cursor: auto;
+        opacity: .5
+    }
+
+    .jw-widget .jw-widget-arrows .arrow.disabled .icon {
+        -webkit-filter: none;
+        filter: none
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .jw-widget {
+            /*width:800px*/
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .jw-widget {
+            /*width:455px*/
+        }
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item {
+        transition: all .7s ease-in-out
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight {
+        width: 355px;
+        height: 200px;
+        position: relative
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight:hover .jw-content-title {
+        text-decoration: none
+    }
+
+    .jw-widget.spotlight .jw-widget-content .jw-widget-item.spotlight .jw-content-title {
+        position: absolute;
+        bottom: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+        max-width: 300px;
+        text-shadow: 1px 1px 2px #333;
+        color: #fff
+    }
+
+    .jw-shelf {
+        margin-top: 20px
+    }
+
+    .jw-widget.shelf {
+        height: 240px
+    }
+
+    .jw-widget.shelf.small {
+        height: 200px
+    }
+
+    .jw-widget.shelf .jw-widget-content {
+        height: 230px
+    }
+
+    .jw-widget.shelf .jw-widget-content .jw-widget-item {
+        width: 230px;
+        height: 130px;
+        margin: 0 10px 0 0
+    }
+
+    .jw-widget.shelf.small .jw-widget-item {
+        width: 180px;
+        height: 103px
+    }
+
+    .jw-widget.shelf .jw-widget-arrows .arrow {
+        top: 54px
+    }
+
+    .jw-widget.shelf .jw-widget-arrows .arrow .icon {
+        top: 6%
+    }
+
+    .jw-widget.shelf.small .jw-widget-arrows .arrow .icon {
+        top: 2%
+    }
+</style>
+<script type="text/javascript">
+    function outPlayerWidget(e) {
+        var t, i, l, d;
+        t = function(t) {
+            var i, l, d = 0, n = 0, s = [];
+            var a = document.getElementById(e.widgetDivId),
+                o = document.getElementById(e.videoPlayerId), r = (document.querySelector(".jw-" + h),
+                    a.querySelector(".jw-widget-content")), c = a.querySelector(".next"),
+                u = a.querySelector(".previous"), g = a.querySelectorAll(".icon"),
+                f = a.querySelectorAll(".jw-widget-item"), m = jwplayer(o), h = e.widgetLayout || "spotlight",
+                v = e.widgetSize || "large", w = e.textColor || "#fff", y = e.backgroundColor || "#000", p = e.iconColor || "#fff", L = e.header || "Discover More Videos";
+            if (a.classList.add(v),
+                a.querySelector(".jw-widget-title").innerText = L,
+                a.style.backgroundColor = y,
+                a.style.color = w,
+                g.forEach(function(e) {
+                    e.style.fill = p
+                }),
+                f.forEach(function(e) {
+                    e.addEventListener("click", function() {
+                        console.log(o.id);
+                        var t = "https://cdn.jwplayer.com/v2/media/" + e.dataset.mediaid;
+                        console.log(t);
+                        console.log('----------');
+                        m.load(t),
+                        m.getViewable() || document.getElementById(o.id).scrollIntoView({
+                            behavior: "smooth"
+                        }),
+                            m.on("playlistItem", function() {
+                                m.play();
+                                console.log('hello');
+                            })
+                    })
+                }),
+            "spotlight" === h) {
+                var j = document.createElement("div");
+                j.innerHTML = '<svg width="477.9px" height="501.1px" viewBox="0 0 477.9 501.1" style="enable-background:new 0 0 477.9 501.1;" xml:space="preserve" fill="#fff"><g transform="translate(887 1706)"><path d="M-875.6-1206.4c-3.1,2.4-7.5,1.8-9.9-1.3c-1.2-1.6-1.7-3.6-1.4-5.5v-484.5c-0.7-3.8,1.9-7.5,5.7-8.2 c2-0.3,4,0.2,5.5,1.4l461.9,243.1c6.2,3.3,6.2,8.6,0,11.9L-875.6-1206.4z"/></g></svg>';
+                var S = a.querySelector(".jw-widget-item");
+                i = document.querySelector(".jw-widget-item").offsetWidth + 10,
+                    S.classList.add("spotlight"),
+                    j.src = "src/img/play.svg",
+                    j.classList.add("jw-play-button"),
+                    S.append(j)
+            } else
+                "shelf" === h && (i = E());
+            function E() {
+                return "large" === v ? 960 : "medium" === v ? 720 : "small" === v ? 380 : void 0
+            }
+            function q() {
+                if ("spotlight" === h) {
+                    if ("large" === v)
+                        return t.length - 3;
+                    if ("medium" === v)
+                        return t.length - 2;
+                    if ("small" === v)
+                        return t.length - 1
+                } else if ("shelf" === h) {
+                    for ("large" === v ? l = 4 : "medium" === v ? l = 3 : "small" === v && (l = 2); t.length > 0; )
+                        s.push(t.splice(0, l));
+                    return s.length - 1
+                }
+            }
+            function b(e) {
+                d += e,
+                "spotlight" === h && (S.classList.remove("spotlight"),
+                    S.removeChild(j),
+                    (S = document.getElementById(h + "-item-" + d)).classList.add("spotlight"),
+                    S.append(j),
+                    j.classList.add("fade"))
+            }
+            c.addEventListener("click", function() {
+                console.log('hello world')
+                var e = q() - 1
+                    , t = s[s.length - 1];
+                if (d === e && c.classList.add("disabled"),
+                d === q())
+                    return !1;
+                if ("shelf" === h && d === e && t.length < l) {
+                    var a = t.length % l;
+                    i = document.querySelector(".jw-widget-item").offsetWidth * a
+                }
+                u.classList.remove("disabled"),
+                    n -= i,
+                    r.style.left = n + "px",
+                    b(1)
+            }),
+                u.addEventListener("click", function() {
+                    q();
+                    var e = s[s.length - 1];
+                    if ("shelf" === h && d === q() && e.length < l) {
+                        var t = e.length % l;
+                        i = document.querySelector(".jw-widget-item").offsetWidth * t + t
+                    } else
+                        i = E();
+                    if (0 === d)
+                        return u.classList.add("disabled"),
+                            !1;
+                    1 === d && u.classList.add("disabled"),
+                        n += i,
+                        r.style.left = n + "px",
+                        c.classList.remove("disabled"),
+                        b(-1)
+                })
+        }
+            ,
+            i = function(i) {
+                var l = []
+                    , d = document.getElementById(e.widgetDivId);
+                d.classList.add(e.widgetLayout);
+                var n = d.querySelector(".jw-widget-content");
+                i.playlist.forEach(function(t, i) {
+                    l.push("<div id='" + e.widgetLayout + "-item-" + i + "' data-mediaid='" + t.mediaid + "' class='jw-widget-item'><div class='jw-content-image'><img src='" + t.image + "'/></div><div class='jw-content-title'>" + t.title + "</div></div>"),
+                        n.insertAdjacentHTML("beforeend", l[i])
+                }),
+                    t(l)
+            }
+            ,
+            l = e.playlist,
+            (d = new XMLHttpRequest).open("GET", l, !0),
+            d.onreadystatechange = function() {
+                if (4 === d.readyState && d.status >= 200) {
+                    var e = JSON.parse(d.responseText);
+                    i(e)
+                }
+            }
+            ,
+            d.send()
+    }
+    //Kenny Loggins playlist: GpAtmZZY
+    //Latest playlist: fM9q0CmU
+    //Greatest hist playlist: kmRHFfHr
+    !function() {
+        var homeConfig = "{\n" +
+            "  \"widgets\": [\n" +
+            "    {\n" +
+            "      \"widgetDivId\": \"jw-widget-demo-shelf\",\n" +
+            "      \"playlist\": \"https://cdn.jwplayer.com/v2/playlists/kmRHFfHr\",\n" +
+            "      \"videoPlayerId\": \"widget-video-player\",\n" +
+            "      \"header\": \"New Releases\",\n" +
+            "      \"textColor\": \"#111\",\n" +
+            "      \"backgroundColor\": \"rgba(71,84,112,.25)\",\n" +
+            "      \"iconColor\": \"#fff\",\n" +
+            "      \"widgetLayout\": \"shelf\",\n" +
+            "      \"widgetSize\": \"large\"\n" +
+            "    },\n" +
+            "    {\n" +
+            "      \"widgetDivId\": \"jw-widget-demo-shelf-2\",\n" +
+            "      \"playlist\": \"https://cdn.jwplayer.com/v2/playlists/AI9vGjcd\",\n" +
+            "      \"videoPlayerId\": \"widget-video-player\",\n" +
+            "      \"header\": \"Greatest Hits\",\n" +
+            "      \"textColor\": \"#111\",\n" +
+            "      \"backgroundColor\": \"rgba(71,84,112,.25)\",\n" +
+            "      \"iconColor\": \"#fff\",\n" +
+            "      \"widgetLayout\": \"shelf\",\n" +
+            "      \"widgetSize\": \"large\"\n" +
+            "    }\n" +
+            "  ]\n" +
+            "}";
+
+        JSON.parse(homeConfig).widgets.forEach(function(e) {
+            outPlayerWidget(e)
+        });
+    }();
+
+    jwplayer('widget-video-player').setup({
+        playlist: 'https://cdn.jwplayer.com/v2/playlists/kmRHFfHr',
+        autostart: false,
+        aspectratio: '16:9',
+        width: '100%'
+    });
+
+</script>
+

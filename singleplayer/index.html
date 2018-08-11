@@ -1,0 +1,44 @@
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+<link rel="stylesheet" href="/singleplayer/singleplayer/css/singleplayer.css?cb=125">
+
+<div id="adplayer">
+    <div id="player" style="position: relative">
+        <div id="image">
+            <img id="static-img" class="static-img" src="">
+        </div>
+        <img id="loading-image" class="loading-image" src="/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125" alt="">
+    </div>
+</div>
+
+<script src="/singleplayer/singleplayer/js/singleplayer.js?cb=125"> </script>
+<script>
+
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+    /*   _____    _ _ _     _   _
+        | ____|__| (_) |_  | | | | ___ _ __ ___
+        |  _| / _` | | __| | |_| |/ _ \ '__/ _ \
+        | |__| (_| | | |_  |  _  |  __/ | |  __/
+        |_____\__,_|_|\__| |_| |_|\___|_|  \___|
+     */
+    // First video to play (Vimeo video id)
+    var firstVideoId = 263694997;
+    // First video static image
+    var firstVideoImg = 'https://i.vimeocdn.com/video/716429651_960x540.jpg?r=pad';
+    // Vimeo album id
+    var albumId = 5299859;
+    // Auto start video on page load
+    var autoStart = false;
+    // Should ads be show
+    var playAds = false;
+    // Should ads be show
+    var randomizeAds = true;
+    // Randomize which ads are played
+    var frequencyAds = 'even'; // how frequently to show ads ['odd', 'even', 'third', 'random']
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+
+
+    //Do not edit
+    var data = {albumId: albumId, isStart: autoStart, isAds:playAds, firstId:firstVideoId, firstImg: firstVideoImg, randomAds: randomizeAds, frequencyAds: frequencyAds};
+    getAlbum(data);
+</script>
+

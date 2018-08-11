@@ -1,0 +1,114 @@
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+
+<div id="adplayer">
+    <div id="player">
+        <div id="image"></div>
+    </div>
+</div>
+
+<script>
+    var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
+    var accessToken = '8aeb6aa949835168b5d8c1b863227828';
+    var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
+    var userId = 46710998;
+
+    /*   _____    _ _ _     _   _
+        | ____|__| (_) |_  | | | | ___ _ __ ___
+        |  _| / _` | | __| | |_| |/ _ \ '__/ _ \
+        | |__| (_| | | |_  |  _  |  __/ | |  __/
+        |_____\__,_|_|\__| |_| |_|\___|_|  \___|
+     */
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+    var albumId = 5305619;
+    var firstVideoId = 232900313;
+    var showAd1Else2 = true;
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+
+
+    var getLocation = function(href) {
+        var l = document.createElement("a");
+        l.href = href;
+        return l;
+    };
+    !function(){
+        var vimeoUrl = 'https://api.vimeo.com/users/'+userId+'/videos/'+firstVideoId+'?client_id='+clientId;
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+                var playJson = JSON.parse(e.responseText);
+                var vid =  {
+                    description: playJson.description,
+                    tags: playJson.tags,
+                    title: playJson.name,
+                    image: playJson.pictures.sizes[3].link,
+                    sources: [
+                        {
+                            title: playJson.name,
+                            file: playJson.files[4].link
+                        },
+                    ]};
+
+                addImage(vid.image);
+                getAlbum(albumId, vid);
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+    }();
+
+    function addImage(imgScr) {
+        var doc = document.getElementById("image");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", imgScr);
+        x.setAttribute("width", "100%");
+        doc.appendChild(x);
+    }
+
+    function getAlbum(albumId, firstVideo) {
+        var vimeoUrl = 'https://api.vimeo.com/users/46710998/albums/'+albumId+'/videos?client_id=5b2edc639552e6c9b16335e31c1b0e86';
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+
+                var playJson = JSON.parse(e.responseText);
+                playJson.data.forEach( function(pl){
+                    var vid =  {
+                        description: pl.description,
+                        tags: pl.tags,
+                        title: pl.name,
+                        image: pl.pictures.sizes[3].link,
+                        sources: [
+                            {
+                                title: pl.name,
+                                file: pl.files[4].link
+                            },
+                        ]};
+                    playlist.playlist.push(vid);
+                });
+
+                //Set first song
+                playlist.playlist.unshift(firstVideo);
+                afterFirstSongSelected(playlist);
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+    };
+
+    function afterFirstSongSelected(playlist) {
+        jwplayer("player").setup({
+            playlist: playlist,
+            advertising: {
+                client: "vast",
+                schedule: showAd1Else2 ? "assets/vmap.xml": "/ad/assets/vmap2.xml"
+            },
+            autostart: false
+        });
+    }
+</script>

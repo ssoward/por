@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmap:VMAP xmlns:vmap="//iab.net/videosuite/vmap" version="1.0">
+  <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll">
+    <vmap:AdSource id="preroll-ad" allowMultipleAds="false" followRedirects="true">
+      <vmap:AdTagURI templateType="vast3">assets/preroll.xml?pre</vmap:AdTagURI>
+    </vmap:AdSource>
+  </vmap:AdBreak>
+  <!--<vmap:AdBreak timeOffset="00:01:40.000" breakType="nonlinear" breakId="overlay-1">-->
+    <!--<vmap:AdSource id="overlay-1-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/overlay.xml</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+  <!--<vmap:AdBreak timeOffset="00:05:00.000" breakType="linear" breakId="midroll-1">-->
+    <!--<vmap:AdSource id="midroll-1-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/midroll.xml?mr1</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+  <!--<vmap:AdBreak timeOffset="00:06:40.000" breakType="nonlinear" breakId="overlay-2">-->
+    <!--<vmap:AdSource id="overlay-2-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/overlay.xml</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+  <!--<vmap:AdBreak timeOffset="00:10:00.000" breakType="linear" breakId="midroll-2">-->
+    <!--<vmap:AdSource id="midroll-2-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/midroll.xml?mr2</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+  <!--<vmap:AdBreak timeOffset="00:11:40.000" breakType="nonlinear" breakId="overlay-3">-->
+    <!--<vmap:AdSource id="overlay-3-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/overlay.xml</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+  <!--<vmap:AdBreak timeOffset="end" breakType="linear" breakId="postroll">-->
+    <!--<vmap:AdSource id="postroll-ad" allowMultipleAds="false" followRedirects="true">-->
+      <!--<vmap:AdTagURI templateType="vast3">assets/preroll.xml?pst</vmap:AdTagURI>-->
+    <!--</vmap:AdSource>-->
+  <!--</vmap:AdBreak>-->
+</vmap:VMAP>

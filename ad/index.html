@@ -1,0 +1,54 @@
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+
+<div id="adplayer">
+    <div id="player"></div>
+</div>
+
+<script>
+    // var firstSongTitle = 'You\'ve Lost That Lovin\' Feelin\' by The Righteous Brothers';
+    // var firstSongTitle = "Don't Stop Believing By Journey";
+    // var firstSongTitle = "Good Vibrations by The Beach Boys";
+    // var firstSongTitle = "Blue Monday by New Order";
+
+    var firstSongTitle = "Barracuda by Heart";
+    var playlistURL = "https://cdn.jwplayer.com/v2/playlists/kmRHFfHr";
+    !function() {
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+                var playJson = JSON.parse(e.responseText);
+                if(playJson && playJson.playlist) {
+                    var index = 0;
+                    playJson.playlist.forEach( function(pl){
+                        // console.log(pl.title);
+                        if(pl.title === firstSongTitle){
+                            if(index>0){
+                                playJson.playlist.splice(index, 1);
+                                playJson.playlist.unshift(pl);
+                            }
+
+                        }
+                        index++;
+                    })
+                }
+                // console.log('------------')
+                // playJson.playlist.forEach( function(pl){ console.log(pl.title); });
+
+                afterFirstSongSelected(playJson);
+            }
+        },
+            e.open("GET", playlistURL, !0), e.send()
+    }();
+    function afterFirstSongSelected(playlist) {
+        jwplayer("player").setup({
+            playlist: playlist,
+            advertising: {
+                client: "vast",
+                schedule: "assets/vmap.xml"
+            },
+            // width: 592,
+            // height: 333,
+            autostart: false
+        });
+    }
+</script>

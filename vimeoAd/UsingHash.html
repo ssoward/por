@@ -1,0 +1,215 @@
+<script src="//content.jwplatform.com/libraries/7bKzv5u6.js"> </script>
+
+<div id="adplayer">
+    <div id="player"></div>
+</div>
+
+<script>
+    var videoHash = {};
+    videoHash[281749798] = ['https://player.vimeo.com/external/281749798.hd.mp4?s=515a63e7ce556d356648339dcd733b88670347e5&profile_id=175'];
+    videoHash[281735779] = ['https://player.vimeo.com/external/281735779.hd.mp4?s=7934592fff59d5f9ed48696c723fe82811fd939e&profile_id=175'];
+    videoHash[281703050] = ['https://player.vimeo.com/external/281703050.hd.mp4?s=7cf60418f65141ce589899cb1432ef71b7e17bcc&profile_id=175'];
+    videoHash[281458652] = ['https://player.vimeo.com/external/281458652.hd.mp4?s=6c735141839905eee83371c5f5a5974421a7e040&profile_id=175'];
+    videoHash[281458652] = ['https://player.vimeo.com/external/281458652.hd.mp4?s=6c735141839905eee83371c5f5a5974421a7e040&profile_id=175'];
+    videoHash[280298229] = ['https://player.vimeo.com/external/280298229.hd.mp4?s=75a0e2ad212335aa635ced6665cba6d1c009d748&profile_id=175'];
+    videoHash[279166089] = ['https://player.vimeo.com/external/279166089.hd.mp4?s=382744e546bdc76dee5305bb82997b0c8689bdde&profile_id=175'];
+
+    //Don't stop
+    videoHash[232909275] = [
+        'https://player.vimeo.com/external/232909275.hd.mp4?s=662ca0f16b44a0485b0c0ac1662a83b1f58501a1&profile_id=175',
+        'https://player.vimeo.com/external/232909275.hd.mp4?s=662ca0f16b44a0485b0c0ac1662a83b1f58501a1&profile_id=174',
+        'https://player.vimeo.com/external/232909275.sd.mp4?s=227af34c7a2f59dab6178e125fee7c848ee32efc&profile_id=165',
+        'https://player.vimeo.com/external/232909275.sd.mp4?s=227af34c7a2f59dab6178e125fee7c848ee32efc&profile_id=164',
+        'https://player.vimeo.com/external/232909275.m3u8?s=0a9ce9833bc1a60ef9e315bc979dd6849a4cb11c'
+    ];
+    //Good Vibrations
+    videoHash[232909100] = [
+        'https://player.vimeo.com/external/232909100.hd.mp4?s=0332e8c2cf68aa0aaf778952d7d86fcc2035a5ac&profile_id=175',
+        'https://player.vimeo.com/external/232909100.hd.mp4?s=0332e8c2cf68aa0aaf778952d7d86fcc2035a5ac&profile_id=174',
+        'https://player.vimeo.com/external/232909100.sd.mp4?s=ce9b6357c73a2d5f2a3733fba47d9438e46724a1&profile_id=165',
+        'https://player.vimeo.com/external/232909100.sd.mp4?s=ce9b6357c73a2d5f2a3733fba47d9438e46724a1&profile_id=164',
+        'https://player.vimeo.com/external/232909100.m3u8?s=66946b3a1674b006c5836b9adea61d140927b699'
+    ];
+    //American Woman
+    videoHash[232910458] = [
+        'https://player.vimeo.com/external/232910458.hd.mp4?s=bf924d2c7ceb8a062a2c5bb154e14d698576647c&profile_id=175',
+        'https://player.vimeo.com/external/232910458.hd.mp4?s=bf924d2c7ceb8a062a2c5bb154e14d698576647c&profile_id=174',
+        'https://player.vimeo.com/external/232910458.sd.mp4?s=5d9b59407d2b5a87b53c9e658a8acc19fa1a4a62&profile_id=165',
+        'https://player.vimeo.com/external/232910458.sd.mp4?s=5d9b59407d2b5a87b53c9e658a8acc19fa1a4a62&profile_id=164',
+        'https://player.vimeo.com/external/232910458.m3u8?s=4589d31ab6d873979cfe23a359633197a523b987'
+    ];
+    //Smooth by Santana
+    videoHash[232904591] = [
+        'https://player.vimeo.com/external/232904591.hd.mp4?s=174734a362f8bf1ebee2c4f84bd7c4cb46e9f722&profile_id=175',
+        'https://player.vimeo.com/external/232904591.hd.mp4?s=174734a362f8bf1ebee2c4f84bd7c4cb46e9f722&profile_id=174',
+        'https://player.vimeo.com/external/232904591.sd.mp4?s=6f225b4e8e3260d29b69e338971b2dcaf88ac551&profile_id=165',
+        'https://player.vimeo.com/external/232904591.sd.mp4?s=6f225b4e8e3260d29b69e338971b2dcaf88ac551&profile_id=164',
+        'https://player.vimeo.com/external/232904591.m3u8?s=8f4c8c21a0f081f81fe287d435f57912d1e15dfd'
+    ];
+
+    //Barracuda by Heart
+    videoHash[232903785] = [
+        'https://player.vimeo.com/external/232903785.hd.mp4?s=3b66c30803677696a0ee5fde93fab031b90374ad&profile_id=175',
+        'https://player.vimeo.com/external/232903785.hd.mp4?s=3b66c30803677696a0ee5fde93fab031b90374ad&profile_id=174',
+        'https://player.vimeo.com/external/232903785.sd.mp4?s=3a06e4ebfff87bc47b1b45ae47fea4b207fc83b4&profile_id=165',
+        'https://player.vimeo.com/external/232903785.sd.mp4?s=3a06e4ebfff87bc47b1b45ae47fea4b207fc83b4&profile_id=164',
+        'https://player.vimeo.com/external/232903785.m3u8?s=125f189a5a587a11c2cd18ca8c1765688eea96cd'
+    ];
+
+    //Feel It Still by Portugal. The Man
+    videoHash[252484031] = [
+        'https://player.vimeo.com/external/252484031.hd.mp4?s=0f47dca41bf2fb2028a69b8f175aedc842bd5191&profile_id=175',
+        'https://player.vimeo.com/external/252484031.hd.mp4?s=0f47dca41bf2fb2028a69b8f175aedc842bd5191&profile_id=174',
+        'https://player.vimeo.com/external/252484031.sd.mp4?s=5fbccbec5aab09ee5ee9271ebda4950abd829f6c&profile_id=165',
+        'https://player.vimeo.com/external/252484031.sd.mp4?s=5fbccbec5aab09ee5ee9271ebda4950abd829f6c&profile_id=164',
+        'https://player.vimeo.com/external/252484031.m3u8?s=0c9548701d027d40bc8635c440845a801d028b1d'
+    ];
+
+    //You've Lost That Lovin' Feelin' by The Righteous Brothers
+    videoHash[232903337] = [
+        'https://player.vimeo.com/external/232903337.hd.mp4?s=2863775ffce8b8f3fc2032c9cf22f7c5161f43d9&profile_id=175',
+        'https://player.vimeo.com/external/232903337.hd.mp4?s=2863775ffce8b8f3fc2032c9cf22f7c5161f43d9&profile_id=174',
+        'https://player.vimeo.com/external/232903337.sd.mp4?s=426145e33e23ccce880f568cbd893aacd0e93469&profile_id=165',
+        'https://player.vimeo.com/external/232903337.sd.mp4?s=426145e33e23ccce880f568cbd893aacd0e93469&profile_id=164',
+        'https://player.vimeo.com/external/232903337.m3u8?s=770bdbc2754aad35a260afb24ec9ae78e041f62c'
+    ];
+
+    //Pumped Up Kicks by Foster The People
+    videoHash[254765225] = [
+        'https://player.vimeo.com/external/254765225.hd.mp4?s=5c7b72368098bc0fc4a0ea6faacebec68c966d55&profile_id=175',
+        'https://player.vimeo.com/external/254765225.hd.mp4?s=5c7b72368098bc0fc4a0ea6faacebec68c966d55&profile_id=174',
+        'https://player.vimeo.com/external/254765225.sd.mp4?s=16945bf4b80edbc29b62f913e92a4b297b67cab1&profile_id=165',
+        'https://player.vimeo.com/external/254765225.sd.mp4?s=16945bf4b80edbc29b62f913e92a4b297b67cab1&profile_id=164',
+        'https://player.vimeo.com/external/254765225.m3u8?s=d0e63d4d7188d3e783c20207909882a6863ae2d4'
+    ];
+
+    //Stop in the Name of Love by The Supremes
+    videoHash[232879392] = [
+        'https://player.vimeo.com/external/232879392.hd.mp4?s=cc504b03d5841b146e83dc70909852edd88cf070&profile_id=175',
+        'https://player.vimeo.com/external/232879392.hd.mp4?s=cc504b03d5841b146e83dc70909852edd88cf070&profile_id=174',
+        'https://player.vimeo.com/external/232879392.sd.mp4?s=2ef406e096a7cc1498887a14beb6505ba7939dae&profile_id=165',
+        'https://player.vimeo.com/external/232879392.sd.mp4?s=2ef406e096a7cc1498887a14beb6505ba7939dae&profile_id=164',
+        'https://player.vimeo.com/external/232879392.m3u8?s=df2cf5f5b3af74123948f0d77eafc741bf679d3e'
+    ];
+
+    //Blue Monday by New Order
+    videoHash[232869273] = [
+        'https://player.vimeo.com/external/232869273.hd.mp4?s=3bf99622f97b52e59facbdd9329444d260491a45&profile_id=175',
+        'https://player.vimeo.com/external/232869273.hd.mp4?s=3bf99622f97b52e59facbdd9329444d260491a45&profile_id=174',
+        'https://player.vimeo.com/external/232869273.sd.mp4?s=57374622fd99e66b8ae0775e3d6bd89b3b598ddb&profile_id=165',
+        'https://player.vimeo.com/external/232869273.sd.mp4?s=57374622fd99e66b8ae0775e3d6bd89b3b598ddb&profile_id=164',
+        'https://player.vimeo.com/external/232869273.m3u8?s=65df76af779eb30b0fb50dd1f2736828234f7088'
+    ];
+
+
+    var playlist = {
+        title: "Ad Test",
+        kind: "MANUAL",
+        playlist: []
+    };
+
+    // var firstSongTitle = 'You\'ve Lost That Lovin\' Feelin\' by The Righteous Brothers';
+    // var firstSongTitle = "Don't Stop Believing By Journey";
+    // var firstSongTitle = "Good Vibrations by The Beach Boys";
+    // var firstSongTitle = "Blue Monday by New Order";
+    // var firstSongTitle = "Barracuda by Heart";
+
+    var accessToken = '8aeb6aa949835168b5d8c1b863227828';
+    var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
+    var userId = 46710998;
+
+    /*   _____    _ _ _     _   _
+        | ____|__| (_) |_  | | | | ___ _ __ ___
+        |  _| / _` | | __| | |_| |/ _ \ '__/ _ \
+        | |__| (_| | | |_  |  _  |  __/ | |  __/
+        |_____\__,_|_|\__| |_| |_|\___|_|  \___|
+     */
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+    var albumId = 5305619;
+    var firstVideoId = 232900313;
+    ////////// ////////// ////////// ////////// ////////// ////////// ////////// //////////
+
+
+    var getLocation = function(href) {
+        var l = document.createElement("a");
+        l.href = href;
+        return l;
+    };
+    !function(){
+        var vimeoUrl = 'https://api.vimeo.com/users/'+userId+'/videos/'+firstVideoId+'?client_id='+clientId;
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+                var playJson = JSON.parse(e.responseText);
+                var vid =  {
+                    description: playJson.description,
+                    tags: playJson.tags,
+                    title: playJson.name,
+                    image: playJson.pictures.sizes[3].link,
+                    sources: [
+                        {
+                            title: playJson.name,
+                            file: playJson.files[4].link
+                        },
+                    ]};
+
+                getAlbum(albumId, vid);
+
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+
+    }();
+
+    function getAlbum(albumId, firstVideo) {
+        var vimeoUrl = 'https://api.vimeo.com/users/46710998/albums/'+albumId+'/videos?client_id=5b2edc639552e6c9b16335e31c1b0e86';
+        var e = new XMLHttpRequest;
+        e.onreadystatechange = function() {
+            if(4 === e.readyState && e.status >= 200){
+
+                var playJson = JSON.parse(e.responseText);
+                playJson.data.forEach( function(pl){
+                    var vidId = getLocation(pl.link).pathname;
+                    vidId = vidId.match(/\d+/)[0];
+                    var vid =  {
+                        description: pl.description,
+                        tags: pl.tags,
+                        title: pl.name,
+                        image: pl.pictures.sizes[3].link,
+                        sources: [
+                            {
+                                title: pl.name,
+                                file: videoHash[vidId][0],
+                            },
+                        ]};
+                    playlist.playlist.push(vid);
+                });
+
+                //Set first song
+                playlist.playlist.unshift(firstVideo);
+                afterFirstSongSelected(playlist);
+            }
+        };
+        e.open("GET", vimeoUrl );
+        e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
+        e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
+        e.setRequestHeader("Authorization", "Bearer "+accessToken);
+        e.send();
+    };
+
+    function afterFirstSongSelected(playlist) {
+        jwplayer("player").setup({
+            playlist: playlist,
+            advertising: {
+                client: "vast",
+                schedule: "assets/vmap.xml"
+            },
+            autostart: false
+        });
+    }
+    afterFirstSongSelected();
+</script>
