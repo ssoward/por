@@ -38,7 +38,7 @@ body {
 }
 .loading-image {
     position: absolute;
-    top: calc(50% - 70px);
+    top: calc(50% - 100px);
     left: calc(50% - 80px);
     width: 150px;
     display: none;

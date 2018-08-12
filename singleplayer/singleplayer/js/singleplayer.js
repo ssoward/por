@@ -1,9 +1,4 @@
-
 var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
-var accessToken = '8aeb6aa949835168b5d8c1b863227828';
-var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
-var userId = 46710998;
-
 
 !function () {
     var image = Math.floor(Math.random() * 3)+1;
@@ -13,61 +8,68 @@ var userId = 46710998;
     x.setAttribute("src", imgSrc);
     x.setAttribute("width", "100%");
     doc.appendChild(x);
-    document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
 }();
 
-function getAlbum(data) {
-    var albumId = data.albumId;
-    var vimeoUrl = 'https://api.vimeo.com/users/46710998/albums/'+albumId+'/videos?client_id=5b2edc639552e6c9b16335e31c1b0e86';
-    var e = new XMLHttpRequest;
-    if(data.firstImg){
-        // addImage(data.firstImg);
-        setTimeout(function(){
-            document.getElementById("loading-image").style.display = "block";
-        }, 1);
-    }
-    e.onreadystatechange = function() {
-        if(4 === e.readyState && e.status >= 200){
-            var firstVid = null;
-            var firstVidIndex = null;
-            var count = 0;
+window.addEventListener("load", function(){
+    document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
+    setTimeout(function(){
+        document.getElementById("loading-image").style.display = "block";
+    }, 1);
+});
 
-            var playJson = JSON.parse(e.responseText);
-            playJson.data.forEach( function(pl){
-                var vid =  {
-                    description: pl.description,
-                    tags: pl.tags,
-                    title: pl.name,
-                    image: pl.pictures.sizes[3].link,
-                    images: pl.pictures,
-                    sources: [
-                        {
-                            title: pl.name,
-                            file: pl.files[4].link
-                        },
-                    ]};
-
-                if(pl.link.indexOf(data.firstId)>-1){
-                    firstVid = vid;
-                    firstVidIndex = count;
-                }
-                count = (count+1);
-                playlist.playlist.push(vid);
-            });
-
-            //Set first song
-            if(firstVid){
-                playlist.playlist.splice(firstVidIndex, 1);
-                playlist.playlist.unshift(firstVid);
-            }
-            loadPlaylistDisplay(playlist, data);
+function loadJSON(data, callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', '/singleplayer/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
         }
     };
-    e.open("GET", vimeoUrl );
-    e.setRequestHeader("Accept", "application/vnd.vimeo.*+json;version=3.4");
-    e.setRequestHeader("Content-Type", "application/vnd.vimeo.*+json");
-    e.setRequestHeader("Authorization", "Bearer "+accessToken);
-    e.send();
+    xobj.send(null);
+}
+
+function getAlbum(data) {
+    loadJSON(data, function(response) {
+        var albumJSON = JSON.parse(response);
+        getAlbum2(data, albumJSON);
+    });
+}
+
+function getAlbum2(data, playJson) {
+    var firstVid = null;
+    var firstVidIndex = null;
+    var count = 0;
+
+    playJson.data.forEach( function(pl){
+        var vid =  {
+            description: pl.description,
+            tags: pl.tags,
+            title: pl.name,
+            image: pl.pictures.sizes[3].link,
+            images: pl.pictures,
+            sources: [
+                {
+                    title: pl.name,
+                    file: pl.files[4].link
+                },
+            ]};
+
+        if(pl.link.indexOf(data.firstId)>-1){
+            firstVid = vid;
+            firstVidIndex = count;
+        }
+        count = (count+1);
+        playlist.playlist.push(vid);
+    });
+
+    //Set first song
+    if(firstVid){
+        playlist.playlist.splice(firstVidIndex, 1);
+        playlist.playlist.unshift(firstVid);
+    }
+    loadPlaylistDisplay(playlist, data);
 };
 
 var master = [];
