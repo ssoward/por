@@ -45,17 +45,17 @@
     </div>
 </div>
 <!-- Swiper -->
-<!--<div class="swiper-container">-->
-    <!--<div id="swiper-playlist" class="swiper-wrapper"> </div>-->
+<div class="swiper-container">
+    <div id="swiper-playlist" class="swiper-wrapper"> </div>
     <!-- Add Pagination -->
-    <!--<div class="swiper-pagination"></div>-->
+    <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
-    <!--<div class="swiper-button-next"></div>-->
-    <!--<div class="swiper-button-prev"></div>-->
-<!--</div>-->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
 
 <!-- Swiper JS -->
-<script src="js/swiper.min.js"></script>
+<script src="../singleplayer/singleplayer/js/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
@@ -117,7 +117,7 @@
                 getAlbum(albumId, vid);
                 //skip carousel
                 // playlist.playlist.unshift(vid);
-                loadPlaylistDisplay(playlist);
+                // loadPlaylistDisplay(playlist);
             }
         };
         e.open("GET", vimeoUrl );
@@ -160,7 +160,7 @@
 
                 //Set first song
                 playlist.playlist.unshift(firstVideo);
-                loadPlaylistDisplay(playlist, true);
+                loadPlaylistDisplay(playlist, false);
             }
         };
         e.open("GET", vimeoUrl );
