@@ -2,30 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69eac19-72ea-422a-9e01-f3697080d85f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/albumJob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/jobs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/updateJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/46710998.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5286127.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5299850.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5299853.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5305619.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5320682.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5322167.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/5322178.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singleplayer/assets/albums.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/css/singleplayer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299859.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299859.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singleplayer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/js/singleplayer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-787488602">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="3" />
+          <entry key="json" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="2" />
+          <entry key="js" value="2450" />
+          <entry key="json" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="2450" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singleplayer/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="405">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -33,42 +74,169 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.min.css" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="1411" lean-forward="true" selection-start-line="11" selection-start-column="1411" selection-end-line="11" selection-end-column="1411" />
+            <state relative-caret-position="165">
+              <caret line="11" column="1411" selection-start-line="11" selection-start-column="1411" selection-end-line="11" selection-end-column="1411" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.min.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="465">
               <caret line="11" column="20996" selection-start-line="11" selection-start-column="20996" selection-end-line="11" selection-end-column="20996" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="79800">
               <caret line="5320" column="40" selection-start-line="5320" selection-start-column="40" selection-end-line="5320" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singleplayer.js" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/albumJob.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/albums/5286127.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="50" selection-end-column="93550" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/updateJSON.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/albums.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299859.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="392035" selection-start-column="392035" selection-end-column="392035" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5286127.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="93550" selection-start-column="93550" selection-end-column="93550" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299850.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299853.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5320682.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5305619.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322167.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/46710998.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322178.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="62120" selection-start-column="62120" selection-end-column="62120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scheduler/jobs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/connect.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/client.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/compile.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/raphael_circle.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/raphael_circle.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -77,10 +245,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jw-widget,.jw-widget.</find>
-      <find>jw-widget.me</find>
-      <find>jw-widget.</find>
-      <find>jw-widget./</find>
       <find>GpAtmZZY</find>
       <find>jw-widget-demo-shel</find>
       <find>main.css</find>
@@ -95,7 +259,7 @@
       <find>addEventListener</find>
       <find>data-mediaid</find>
       <find>playlistItem</find>
-      <find />
+      <find>loadPlaylistDisplay(playlist, data);</find>
       <find>206</find>
       <find>class=&quot;swiper-slide&quot;</find>
       <find>class=&quot;jw-content-image&quot;&gt;</find>
@@ -107,6 +271,10 @@
       <find>margin-right</find>
       <find>margin</find>
       <find>width</find>
+      <find>firstVideoImg</find>
+      <find>firstImg</find>
+      <find>getlocation</find>
+      <find>5289</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,11 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/out/jw-widget/widget-config.json" />
-        <option value="$PROJECT_DIR$/out/js/main.js" />
-        <option value="$PROJECT_DIR$/out/js/developer.js" />
-        <option value="$PROJECT_DIR$/out/angular.html" />
-        <option value="$PROJECT_DIR$/out/por/js/PORController.js" />
         <option value="$PROJECT_DIR$/out/por/js/angular.min.js" />
         <option value="$PROJECT_DIR$/out/por/js/PORockController.js" />
         <option value="$PROJECT_DIR$/out/por/js/developer.min.js" />
@@ -155,9 +318,22 @@
         <option value="$PROJECT_DIR$/singleplayer/assets/album.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/swipe/index.html" />
-        <option value="$PROJECT_DIR$/singleplayer/index.html" />
         <option value="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js" />
         <option value="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" />
+        <option value="$PROJECT_DIR$/scheduler/ablumJob.js" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/albums.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5286127.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5299850.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5299853.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5320682.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5305619.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5322167.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/46710998.json" />
+        <option value="$PROJECT_DIR$/singleplayer/assets/5322178.json" />
+        <option value="$PROJECT_DIR$/singleplayer/index.html" />
+        <option value="$PROJECT_DIR$/scheduler/updateJSON.js" />
+        <option value="$PROJECT_DIR$/scheduler/albumJob.js" />
+        <option value="$PROJECT_DIR$/scheduler/jobs.html" />
       </list>
     </option>
   </component>
@@ -167,11 +343,29 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/scheduler/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/scheduler/node_modules/amdefine/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/optimist/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/require/example/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/require/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/std/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/uglify-js/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/node_modules/xmlhttprequest/package.json" />
+      <path value="$PROJECT_DIR$/scheduler/package.json" />
+      <path value="$PROJECT_DIR$/swiper/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="1373" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -179,7 +373,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,46 +386,29 @@
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="swiper.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="swipe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="swipe" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
@@ -248,14 +427,6 @@
               <item name="swiper" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="swiper" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="swiper.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
@@ -266,13 +437,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534316167485" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -307,44 +477,23 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -369,6 +518,7 @@
       <workItem from="1533695056704" duration="5448000" />
       <workItem from="1533929971040" duration="10024000" />
       <workItem from="1533995714902" duration="5389000" />
+      <workItem from="1534312125640" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="randomizing loading bg image">
       <created>1534003747960</created>
@@ -391,64 +541,49 @@
       <option name="project" value="LOCAL" />
       <updated>1534033729714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding carousel">
+      <created>1534037726262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534037726262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93315000" />
+    <option name="totallyTimeSpent" value="101519000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1280" height="1373" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="984" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50080776" side_tool="true" weight="0.3299373" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49919224" visible="true" weight="0.3299373" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12681745" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13675214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17851374" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295964" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,163 +596,10 @@
     <MESSAGE value="randomizing loading bg image" />
     <MESSAGE value="adding ignore" />
     <MESSAGE value="Adding album.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding album.json" />
+    <MESSAGE value="Adding carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding carousel" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/jw-widget/widget-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/jw-widget/js/jw-widget-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/js/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="10088" selection-start-line="10088" selection-end-line="10088" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/js/developer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="10427" column="2" selection-start-line="10427" selection-start-column="2" selection-end-line="10427" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/js/PORockController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/js/developer.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6990">
-          <caret line="9" column="23000" selection-start-line="9" selection-start-column="23000" selection-end-line="9" selection-end-column="23000" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/por/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" selection-end-line="120" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/jw-widget/css/jw-widget-min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4260">
-          <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad/assets/vmap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/jw-widget/js/jw-widget-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="85" selection-start-line="56" selection-start-column="85" selection-end-line="56" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ad/assets/preroll.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vimeoAd/assets/preroll.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/carrots.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
@@ -707,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299859.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -721,12 +696,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/css/singleplayer.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/js/singleplayer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/css/singleplayer.css" />
+    <entry file="file://$PROJECT_DIR$/singleplayer/js/singleplayer.js" />
     <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -762,20 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="1411" lean-forward="true" selection-start-line="11" selection-start-column="1411" selection-end-line="11" selection-end-column="1411" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="11" column="20996" selection-start-line="11" selection-start-column="20996" selection-end-line="11" selection-end-column="20996" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiper/dist/js/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -783,31 +740,139 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/ablumJob.js" />
     <entry file="file://$PROJECT_DIR$/singleplayer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="405">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1411" selection-start-line="11" selection-start-column="1411" selection-end-line="11" selection-end-column="1411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="11" column="20996" selection-start-line="11" selection-start-column="20996" selection-end-line="11" selection-end-column="20996" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="79800">
           <caret line="5320" column="40" selection-start-line="5320" selection-start-column="40" selection-end-line="5320" selection-end-column="40" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/albums.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299859.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="392035" selection-start-column="392035" selection-end-column="392035" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299853.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5320682.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5305619.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322167.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/46710998.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322178.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="62120" selection-start-column="62120" selection-end-column="62120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/connect.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/client.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/compile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/raphael_circle.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/node_modules/require/example/raphael_circle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/r.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/updateJSON.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/albums/albums.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/albums/5286127.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-end-column="93550" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5286127.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="93550" selection-start-column="93550" selection-end-column="93550" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299850.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/albumJob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/jobs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
