@@ -88,21 +88,32 @@ function loadPlaylistDisplay(playlist, data){
     loadCarousel(playlist, data);
 }
 
+function addVideoToCarousel(html, pl, count){
+        return '<div style="width: 330px;" class="swiper-slide" id="shelf-item-2" class="jw-widget-item">' +
+        '    <div style="cursor: pointer" data-mediaid="' + count + '" id="gallery-item-' + count + '" class="jw-content-image">                                    ' +
+        '    <img width="100%" src="' + pl.images.sizes[4].link + '"/>         ' +
+        ' <span class="swiper-pagination-current">' + pl.title + '</span>' +
+        '    </div>                                                            ' +
+        '</div>                                                                ';
+}
+
 function loadCarousel(playlist, data){
     var doc = document.getElementById("swiper-playlist");
     var html = '';
     var count = 1;
+    var last = null;
 
     playlist.playlist.forEach(function (pl) {
-        html = html.concat(
-            '<div style="width: 330px;" class="swiper-slide" id="shelf-item-2" class="jw-widget-item">' +
-            '    <div style="cursor: pointer" data-mediaid="' + count + '" id="gallery-item-' + count + '" class="jw-content-image">                                    ' +
-            '    <img width="100%" src="' + pl.images.sizes[4].link + '"/>         '+
-            ' <span class="swiper-pagination-current">'+pl.title+'</span>'+
-            '    </div>                                                            '+
-            '</div>                                                                ');
+        var vid = addVideoToCarousel(html, pl, count);
+        if(count>1) {
+            html = html.concat(vid);
+           }else{
+            last = vid;
+        }
         count = count + 1;
     });
+    html = html.concat(last);
+    console.log(html)
     doc.innerHTML = html;
 
     var swiper = new Swiper('.swiper-container', {
@@ -119,6 +130,7 @@ function loadCarousel(playlist, data){
     for (var i = 1; i < count; i++) {
         var str = 'gallery-item-' + i;
         var e3 = document.getElementById(str);
+        console.log(str)
         e3.addEventListener("click", function (w) {
             var index = this.dataset.mediaid - 1;
             var t = master.playlist[index];

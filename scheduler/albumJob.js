@@ -28,16 +28,29 @@ var options = {
     }
 };
 
+var albumMap = [];
 function callbackAlbum(error, response, body) {
     if (!error && response.statusCode == 200) {
         var info = JSON.parse(body);
+        if(info.paging.next){
+            var url = 'https://api.vimeo.com'+ info.paging.next
+            options.url = url;
+            request(options, callbackAlbum);
+        }
         console.log('--------------------------------------------------------')
         // console.log(info)
         var id = getAlbumId(info.paging.first);
 
-        fs.writeFile('albums/'+id+'.json', body, function (err) {
+        if(albumMap.hasOwnProperty(id)){
+            console.log(id)
+            info.data = info.data.concat(albumMap[id]);
+        }
+        albumMap[id] = info.data;
+        console.log(info.data.length);
+
+        fs.writeFile('albums/'+id+'.json', JSON.stringify(info), function (err) {
             if (err) throw err;
-            console.log('Replaced!');
+            console.log('Replaced: '+ id);
         });
         console.log('--------------------------------------------------------')
     }
@@ -50,19 +63,34 @@ function callback(error, response, body) {
             info.data.forEach(function(albumURI){
                 var url = 'https://api.vimeo.com'+ albumURI.uri+'/videos';
                 options.url = url;
-                request(options, callbackAlbum);
+                // if(options.url.indexOf('5299853')!==-1) {
+                    request(options, callbackAlbum);
+                // }
             })
         }
     }
 }
 
 function fetchJSON() {
+    clearJSONFiles();
     var url = 'https://api.vimeo.com/users/46710998/albums';
     options.url = url;
     request(options, callback);
 }
-fetchJSON();
 
+
+function clearJSONFiles() {
+    const testFolder = './albums/';
+    fs.readdir(testFolder, (err, files) => {
+        files.forEach(file => {
+            console.log(file);
+            var filePath = testFolder + file;
+            fs.unlinkSync(filePath);
+        });
+    });
+}
+
+fetchJSON();
 
 //web jobs.html below
 // function loadLocalJSON(vimeoUrl, callback) {
