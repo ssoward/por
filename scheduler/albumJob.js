@@ -1,15 +1,17 @@
 //Run this script to update all Vimeo albums
-//To run: npm albumJob.js
+//To run: node albumJob.js
 //all updates saved to albums/*.json
 
 var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
-var accessToken = '8aeb6aa949835168b5d8c1b863227828';
-var clientId = '5b2edc639552e6c9b16335e31c1b0e86';
+var accessToken1 = '8aeb6aa949835168b5d8c1b863227828';
+var accessToken2 = '6d9e10dd242b50511b1a2f7aa920cb78';
+var accessToken3 = 'c25a2dcaf09f8625bada29935179926d';
 var userId = 46710998;
 
 var fs = require('fs');
 const url = require('url');
 var request = require('request');
+var figlet = require('figlet');
 
 function getAlbumId(adr) {
     var q = url.parse(adr, true);
@@ -24,7 +26,7 @@ var options = {
         'User-Agent': 'request',
         'Accept': 'application/vnd.vimeo.*+json;version=3.4',
         'Content-Type': 'application/vnd.vimeo.*+json',
-        'Authorization': 'Bearer '+accessToken
+        'Authorization': 'Bearer '+accessToken2
     }
 };
 
@@ -32,27 +34,24 @@ var albumMap = [];
 function callbackAlbum(error, response, body) {
     if (!error && response.statusCode == 200) {
         var info = JSON.parse(body);
+        var id = getAlbumId(info.paging.first);
         if(info.paging.next){
             var url = 'https://api.vimeo.com'+ info.paging.next
+            console.log('Fetching next page for album ID: '+ id);
             options.url = url;
             request(options, callbackAlbum);
         }
-        console.log('--------------------------------------------------------')
-        // console.log(info)
-        var id = getAlbumId(info.paging.first);
 
+        //Add previous pages to this list of videos for album ID
         if(albumMap.hasOwnProperty(id)){
-            console.log(id)
             info.data = info.data.concat(albumMap[id]);
         }
         albumMap[id] = info.data;
-        console.log(info.data.length);
 
         fs.writeFile('albums/'+id+'.json', JSON.stringify(info), function (err) {
             if (err) throw err;
-            console.log('Replaced: '+ id);
+            console.log('Created albumId: ' + id +' video count: '+ info.data.length);
         });
-        console.log('--------------------------------------------------------')
     }
 }
 
@@ -62,12 +61,19 @@ function callback(error, response, body) {
         if(info.data){
             info.data.forEach(function(albumURI){
                 var url = 'https://api.vimeo.com'+ albumURI.uri+'/videos';
+                console.log('--------------------------------------------------------');
+                console.log('Fetching Album: '+ albumURI.name);
                 options.url = url;
-                // if(options.url.indexOf('5299853')!==-1) {
-                    request(options, callbackAlbum);
-                // }
+                request(options, callbackAlbum);
             })
         }
+    }
+
+    if (!error && response.statusCode == 429) {
+        console.log('--------------------------------------------------------');
+        console.log(figlet.textSync('TOO MANY REQUEST'));
+        console.log('To Vimeo server. You\'ll need to wait 24 hours or toggle users.');
+        console.log('--------------------------------------------------------');
     }
 }
 
@@ -83,7 +89,7 @@ function clearJSONFiles() {
     const testFolder = './albums/';
     fs.readdir(testFolder, (err, files) => {
         files.forEach(file => {
-            console.log(file);
+            console.log('Deleting file: '+file);
             var filePath = testFolder + file;
             fs.unlinkSync(filePath);
         });

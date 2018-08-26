@@ -2,7 +2,7 @@
 <vmap:VMAP xmlns:vmap="//iab.net/videosuite/vmap" version="1.0">
   <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll">
     <vmap:AdSource id="preroll-ad" allowMultipleAds="false" followRedirects="true">
-      <vmap:AdTagURI templateType="vast3">assets/preroll.xml?pre</vmap:AdTagURI>
+      <vmap:AdTagURI templateType="vast3">/singleplayer/assets/preroll.xml?pre</vmap:AdTagURI>
     </vmap:AdSource>
   </vmap:AdBreak>
   <!--<vmap:AdBreak timeOffset="00:01:40.000" breakType="nonlinear" breakId="overlay-1">-->

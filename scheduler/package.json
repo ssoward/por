@@ -4,6 +4,7 @@
   "description": "",
   "main": "albumJob.js",
   "dependencies": {
+    "figlet": "^1.2.0",
     "fs": "0.0.1-security",
     "request": "^2.88.0",
     "require": "^2.4.20",
