@@ -1,5 +1,8 @@
 var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
 var master = [];
+var firstAlbum = "";
+var masterData;
+var master = {playerList:[], playlists:[]};
 
 !function () {
     var image = Math.floor(Math.random() * 3)+1;
@@ -12,10 +15,21 @@ var master = [];
 }();
 
 window.addEventListener("load", function(){
-    document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
-    setTimeout(function(){
-        document.getElementById("loading-image").style.display = "block";
-    }, 1);
+    if(document.getElementById('loading-image')) {
+        document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
+        setTimeout(function () {
+            document.getElementById("loading-image").style.display = "block";
+        }, 1);
+    }
+
+    //replace br with div for title of first album
+    var doc = document.getElementsByTagName("br")[0];
+    var newItem = document.createElement("div");
+    newItem.setAttribute("id", "carousel1");
+    newItem.setAttribute("class", "carousel001");
+    var textnode = document.createTextNode(firstAlbum);
+    newItem.appendChild(textnode);
+    doc.parentNode.replaceChild(newItem, doc);
 });
 
 function loadLocalJSON(data, callback) {
@@ -24,17 +38,38 @@ function loadLocalJSON(data, callback) {
     xobj.open('GET', '/singleplayer/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(xobj.responseText);
+            callback(xobj.responseText, data);
         }
     };
     xobj.send(null);
 }
 
 function getAlbum(data) {
-    loadLocalJSON(data, function(response) {
-        var albumJSON = JSON.parse(response);
-        init(data, albumJSON);
-    });
+    masterData = data;
+    if(data && Array.isArray(data.albumId)){
+        loadMultipleCarousel(data);
+    }else {
+        loadLocalJSON(data, function (response) {
+            var albumJSON = JSON.parse(response);
+            init(data, albumJSON);
+        });
+    }
+}
+
+function getVid(pl){
+    var vid =  {
+        description: pl.description,
+        tags: pl.tags,
+        title: pl.name,
+        image: pl.pictures.sizes[3].link,
+        images: pl.pictures,
+        sources: [
+            {
+                title: pl.name,
+                file: pl.files[4].link
+            },
+        ]};
+    return vid;
 }
 
 function init(data, playJson) {
@@ -43,18 +78,7 @@ function init(data, playJson) {
     var count = 0;
 
     playJson.data.forEach( function(pl){
-        var vid =  {
-            description: pl.description,
-            tags: pl.tags,
-            title: pl.name,
-            image: pl.pictures.sizes[3].link,
-            images: pl.pictures,
-            sources: [
-                {
-                    title: pl.name,
-                    file: pl.files[4].link
-                },
-            ]};
+        var vid = getVid(pl);
 
         if(pl.link.indexOf(data.firstId)>-1){
             firstVid = vid;
@@ -69,43 +93,39 @@ function init(data, playJson) {
         playlist.playlist.splice(firstVidIndex, 1);
         playlist.playlist.unshift(firstVid);
     }
-    loadPlaylistDisplay(playlist, data);
+    master.playlists[data.albumId] = playlist.playlist;
+    loadPlaylistDisplay(playlist, data, 'player', data.albumId);
 };
 
-var master = [];
-var m;
+// var m;
+// var playerList = [];
 
-function loadPlaylistDisplay(playlist, data){
-    m = jwplayer("player").setup({
-        playlist: playlist,
-        advertising: {
-            client: "vast",
-            schedule: data.isAds? (data.randomAds ? "/singleplayer/assets/vmap.xml": "/singleplayer/assets/vmap2.xml"):""
-        },
-        autostart: data.isStart
-    });
-    master = playlist;
-    loadCarousel(playlist, data);
+function loadPlaylistDisplay(playlist, data, htmlId, albumId){
+
+    var myVar = setInterval(function(){
+        if(!jwplayer){
+        }else{
+            master.playerList[albumId] = jwplayer(htmlId).setup({
+                playlist: playlist,
+                advertising: {
+                    client: "vast",
+                    schedule: data.isAds? (data.randomAds ? "/singleplayer/assets/vmap.xml": "/singleplayer/assets/vmap2.xml"):""
+                },
+                autostart: data.isStart
+            });
+            loadCarousel(playlist, "swiper-playlist", ".swiper-container", ".swiper-button-next", ".swiper-button-prev", albumId);
+            clearInterval(myVar);
+        }
+    } ,1000);
 }
 
-function addVideoToCarousel(html, pl, count){
+function addVideoToCarousel(html, pl, count, albumId, uniqueId){
     return '<div style="width: 330px;" class="swiper-slide" id="shelf-item-2" class="jw-widget-item">' +
-        '    <div style="cursor: pointer" data-mediaid="' + count + '" id="gallery-item-' + count + '" class="jw-content-image">                                    ' +
+        '    <div style="cursor: pointer" data-albumId="'+albumId+'" data-mediaid="' + count + '" id="gallery-item-' + uniqueId + '" class="jw-content-image">                                    ' +
         '    <img width="100%" src="' + pl.images.sizes[4].link + '"/>         ' +
         ' <span class="swiper-pagination-current">' + pl.title + '</span>' +
         '    </div>                                                            ' +
         '</div>                                                                ';
-}
-
-function checkMobile(){
-    var clickHandler = function (event) { event.preventDefault(); };
-    if(!isMobile()){
-        var matches = document.getElementsByClassName('swiper-button-next')
-        console.log(matches);
-        for (var i=0; i<matches.length; i++) { matches[i].removeEventListener('click', clickHandler, false); }
-        matches = document.getElementsByClassName('swiper-button-next')
-        for (var i=0; i<matches.length; i++) { matches[i].removeEventListener('click', clickHandler, false); }
-    }
 }
 
 function isMobile() {
@@ -114,14 +134,15 @@ function isMobile() {
     return check;
 }
 
-function loadCarousel(playlist, data){
-    var doc = document.getElementById("swiper-playlist");
+function loadCarousel(playlist, id001, id002, id003, id004, albumId){
+    var doc = document.getElementById(id001);
     var html = '';
     var count = 1;
     var last = null;
 
     playlist.playlist.forEach(function (pl) {
-        var vid = addVideoToCarousel(html, pl, count);
+        var uniqueId = albumId+'_'+count;
+        var vid = addVideoToCarousel(html, pl, count, albumId, uniqueId);
         if(count>1) {
             html = html.concat(vid);
         }else{
@@ -133,25 +154,51 @@ function loadCarousel(playlist, data){
     doc.innerHTML = html;
 
     var next = '';
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper(id002, {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
-            el: '.swiper-pagination',
+            // el: '.swiper-pagination',
             type: 'fraction',
             clickable: true,
         },
-        navigation: {nextEl: isMobile() ? '' : '.swiper-button-next', prevEl: isMobile() ? '' : '.swiper-button-prev',},
+        navigation: {nextEl: id003, prevEl: id004},
     });
 
-    for (var i = 1; i < count; i++) {
-        var str = 'gallery-item-' + i;
+    for (var i = (1); i < count; i++) {
+        var uniqueId = albumId+'_'+i;
+        var str = 'gallery-item-' + uniqueId;
         var e3 = document.getElementById(str);
+
         e3.addEventListener("click", function (w) {
+            //hide all players
+
+            var vids = document.getElementsByTagName('video')
+
+            for( var i = 0; i < vids.length; i++ ){
+                vids.item(i).src = '';
+            }
+            master.playerList.forEach( function(value, key){
+                var dd = document.getElementById("playerId"+key);
+                if(dd){
+                    dd.classList.add("hidden");
+                }
+            });
+
+            //show player
+            var playerCurrent = document.getElementById("playerId"+albumId);
+            if(playerCurrent) {
+                playerCurrent.classList.remove("hidden");
+                playerCurrent.classList.add("visible");
+            }
+            //get the video index for playlist
             var index = this.dataset.mediaid - 1;
-            var t = master.playlist[index];
-            // master.playlist.splice(index, 1);
-            // master.playlist.unshift(t);
+            //get playlist for this album
+            var pl = master.playlists[albumId];
+
+            var t = pl[index];
+            //get player for this album
+            var m = master.playerList[albumId];
             m.load(t);
             m.on("playlistItem", function () {
                 m.play();
@@ -160,3 +207,77 @@ function loadCarousel(playlist, data){
     }
 }
 
+// ----------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
+// Multi Carousel
+// ----------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
+
+function loadMultipleCarousel(data){
+    var albums = {list: data.albumId};
+    var firstCarousel = data.albumId[0];
+
+    // add album title
+    firstAlbum = firstCarousel.title;
+
+    data.albumId = firstCarousel.id;
+    getAlbum(data);
+
+    var matches = document.getElementsByClassName('swiper-container');
+    var doc = matches[0];
+    // for (var i=0; i<matches.length; i++) { }
+    albums.list.splice(0, 1);
+
+    albums.list.forEach( function(pl){
+
+        //load carousel player
+        var player = document.createElement("div");
+        player.setAttribute("class", "player-padding hidden player"+pl.id);
+        player.setAttribute("id", "playerId"+pl.id);
+        player.innerHTML = '<div id="player'+pl.id+'" style="position: relative">hello</div>';
+        // player.style.display = "none";
+
+        loadPlaylistDisplay(playlist, masterData, 'player'+pl.id, pl.id);
+
+        var titleId = 'carousel'+pl.id;
+        var newItem = document.createElement("div");
+        newItem.setAttribute("id", titleId);
+        newItem.setAttribute("class", "carousel001");
+        var textnode = document.createTextNode(pl.title);
+        newItem.appendChild(textnode);
+        doc.parentNode.insertBefore(newItem, doc.nextSibling);
+        newItem.parentNode.insertBefore(player, doc.nextSibling);
+
+
+        //create carousel html
+        var car = document.createElement("div");
+        car.setAttribute("id", titleId);
+        car.setAttribute("class", "swiper-dynamic swiper-container"+pl.id);
+        car.innerHTML = '<div id="swiper-playlist'+pl.id+'" class="swiper-wrapper"> </div> <div class="swiper-button-next swiper-button-next'+pl.id+'"></div> <div class="swiper-button-prev swiper-button-prev'+pl.id+'"></div>';
+        newItem.parentNode.insertBefore(car, newItem.nextSibling);
+
+
+        //get album json
+        var d = {albumId: pl.id};
+        loadLocalJSON(d, function (response, data) {
+            var play = { title: "Ad Test", kind: "MANUAL", playlist: [] };
+            var albumJSON = JSON.parse(response);
+            albumJSON.data.forEach( function(pl){
+                var vid = getVid(pl);
+                play.playlist.push(vid);
+            });
+            // console.log(data)
+            // console.log(play.playlist)
+            // console.log('-------------')
+            master.playlists[data.albumId] = play.playlist;
+
+            loadCarousel(play, "swiper-playlist"+data.albumId,
+                ".swiper-container"+data.albumId,
+                ".swiper-button-next"+data.albumId,
+                ".swiper-button-prev"+data.albumId, data.albumId);
+        });
+
+    });
+
+}
