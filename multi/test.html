@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        .carouselClass{
+            height:200px;
+        }
+        .active {
+            background-color: #0E7EF4;
+        }
+    </style>
+    <script type="text/javascript">
+        function changepic(ele) {
+            var rect = ele.getBoundingClientRect();
+            // console.log(rect);
+
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            console.log('------------')
+            // console.log(w);
+            console.log(h);
+
+            // document.getElementById("demo").style.top=2000 + "px";
+            var body = document.body, html = document.documentElement;
+            var list = document.getElementsByClassName("carouselClass");
+            // console.log(list);
+            Array.prototype.forEach.call(list, function(el) {
+                // if(el !== ele) {
+                //     el.style.position = "relative";
+                // el.style.height = null;
+                // el.style.position.top = null;
+                // el.style.position.left = null;
+                // }
+            });
+
+            // var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+            // var viewportOffset = ele.getBoundingClientRect();
+            // console.log(ele);
+            // ele.style.top=height+"px";
+            // ele.style.position = "absolute";
+            // ele.style.height="80%";
+//             var top = viewportOffset.top;
+            // console.log(top)
+            // var hh = top + window.scrollY
+            // console.log(ele.offsetTop);
+            // var left = viewportOffset.left;
+            // ele.animate({ scrollTop: 10 }, 'fast');
+            // ele.style.position.top = top;
+            $('html, body').animate({ scrollTop: ele.offsetTop }, 'slow');
+
+            // window.scrollTo(0,0);
+
+            // ele.style.position.left = left;
+        }
+    </script>
+</head>
+<body>
+
+
+<div onClick="changepic(this)" class="carouselClass" style="height:200px; background-color: #111fff" class=""> <a id="demp1">001</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #222fff" class=""> <a id="demp2">002</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #333fff" class=""> <a id="demp3">003</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #444fff" class=""> <a id="demp4">004</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #555fff" class=""> <a id="demp5">005</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+<div onClick="changepic(this)" class="carouselClass" style="background-color: #666fff" class=""> <a id="demp6">006</a> </div>
+</body>
+</html>

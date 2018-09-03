@@ -2,63 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69eac19-72ea-422a-9e01-f3697080d85f" name="Default" comment="Separating single player with multi player.">
+      <change afterPath="$PROJECT_DIR$/multi/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/46710998.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5286127.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5299850.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299850.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5299853.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299853.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5299859.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299859.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5305619.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5305619.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5320682.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5322167.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322167.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5322178.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329644.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329644.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329647.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329648.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329652.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329653.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329661.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5329669.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5358386.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5358386.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368334.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368334.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368337.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368337.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368341.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368341.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368342.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368342.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368343.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368343.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5368348.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5368348.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/5373901.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5373901.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/716429651_960x540.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/Professor-of-Rock-Footer-Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/albums.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/jwplayer-rectangle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/loading-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/loading-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/loading-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/midroll.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/overlay.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/postroll.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/preroll.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/sintel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/timeline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/assets/vmap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/multi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/multi/css/singleplayer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/multi/css/swiper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/multi/js/singleplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/multi/js/swiper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/multi/js/swiper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5286127.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5286127.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5320682.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5320682.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5322178.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322178.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329647.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329647.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329652.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329652.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329653.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329653.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329661.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329661.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/assets/vmap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/vmap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swiper" beforeDir="false" afterPath="$PROJECT_DIR$/swiper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swiper/scripts/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/swiper/scripts/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/46710998.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/46710998.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5286127.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5286127.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299850.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5299850.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299853.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5299853.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299859.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5299859.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5305619.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5305619.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5320682.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5320682.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5322167.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5322167.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5322178.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5322178.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329644.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329644.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329647.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329647.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329648.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329648.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329652.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329652.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329653.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329653.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329661.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329661.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329669.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5329669.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5358386.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5358386.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368334.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368334.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368337.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368337.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368341.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368341.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368342.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368342.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368343.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368343.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5368348.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5368348.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5373901.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/5373901.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/716429651_960x540.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/716429651_960x540.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/Professor-of-Rock-Footer-Icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/Professor-of-Rock-Footer-Icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/albums.json" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/albums.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/highlight.png" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/highlight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/jwplayer-rectangle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/jwplayer-rectangle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/loading-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/loading-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/loading-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/loading-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/loading-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/loading-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/midroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/midroll.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/overlay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/overlay.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/postroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/postroll.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/preroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/preroll.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/sintel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/sintel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/timeline.png" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/timeline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/vmap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multi/assets/vmap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/multi.html" beforeDir="false" afterPath="$PROJECT_DIR$/multi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/css/multi.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/js/multi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/js/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/js/swiper.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,109 +74,76 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
-          <entry key="html" value="4" />
-          <entry key="js" value="14" />
+          <entry key="css" value="6" />
+          <entry key="html" value="7" />
+          <entry key="js" value="15" />
           <entry key="json" value="13" />
           <entry key="ts" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
-          <entry key="HTML" value="4" />
+          <entry key="CSS" value="6" />
+          <entry key="HTML" value="7" />
           <entry key="JSON" value="13" />
-          <entry key="JavaScript" value="14" />
+          <entry key="JavaScript" value="15" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2820" />
-          <entry key="html" value="396" />
-          <entry key="js" value="24227" />
+          <entry key="css" value="2865" />
+          <entry key="html" value="3526" />
+          <entry key="js" value="26251" />
           <entry key="json" value="42" />
           <entry key="ts" value="27" />
           <entry key="txt" value="378" />
-          <entry key="xml" value="55" />
+          <entry key="xml" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2820" />
-          <entry key="HTML" value="396" />
+          <entry key="CSS" value="2865" />
+          <entry key="HTML" value="3526" />
           <entry key="JSON" value="42" />
-          <entry key="JavaScript" value="24227" />
+          <entry key="JavaScript" value="26251" />
           <entry key="PLAIN_TEXT" value="378" />
           <entry key="TypeScript" value="27" />
-          <entry key="XML" value="55" />
+          <entry key="XML" value="68" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/multi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiper/scripts/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/assets/albums.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/assets/midroll.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/singleplayer/assets/vmap.xml">
+        <entry file="file://$PROJECT_DIR$/multi/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+            <state relative-caret-position="495">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
+        <entry file="file://$PROJECT_DIR$/multi/assets/vmap.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multi/multi/js/multi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -196,49 +154,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+        <entry file="file://$PROJECT_DIR$/singleplayer.bk/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multi/multi/css/multi.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110415">
-              <caret line="7374" column="4" selection-start-line="7374" selection-start-column="4" selection-end-line="7374" selection-end-column="4" />
+            <state relative-caret-position="330">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css">
+        <entry file="file://$PROJECT_DIR$/multi/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scheduler/albumJob.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="735">
+              <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#15;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scheduler/node_modules/request/request.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="195" selection-start-line="195" selection-end-line="195" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="5727" column="27" selection-start-line="5727" selection-start-column="27" selection-end-line="5727" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -247,8 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swiper-pagination</find>
-      <find>/</find>
       <find>swiper-slide</find>
       <find>3</find>
       <find>margin-right</find>
@@ -268,7 +217,6 @@
       <find>vmap.xml</find>
       <find>swiper-button-next</find>
       <find>https://vimeo.com/albums/</find>
-      <find>loadCarousel</find>
       <find>stop be</find>
       <find>swiper-container</find>
       <find>.swiper-container</find>
@@ -277,6 +225,9 @@
       <find>player-hide</find>
       <find>cancel()</find>
       <find>5299853</find>
+      <find>playerId</find>
+      <find>loadCarousel</find>
+      <find>loadPlaylistDisplay</find>
     </findStrings>
     <replaceStrings>
       <replace>hidden</replace>
@@ -288,10 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/out/july24.html" />
-        <option value="$PROJECT_DIR$/out/ad.html" />
-        <option value="$PROJECT_DIR$/ad.html" />
-        <option value="$PROJECT_DIR$/ad/js/main.js" />
         <option value="$PROJECT_DIR$/ad/assets/vmap.xml" />
         <option value="$PROJECT_DIR$/out/jw-widget/js/jw-widget-min.js" />
         <option value="$PROJECT_DIR$/ad/index.html" />
@@ -332,13 +279,17 @@
         <option value="$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css" />
         <option value="$PROJECT_DIR$/singleplayer/singleplayer/css/style.css" />
         <option value="$PROJECT_DIR$/singleplayer/index.html" />
-        <option value="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" />
         <option value="$PROJECT_DIR$/scheduler/albumJob.js" />
         <option value="$PROJECT_DIR$/multi/index.html" />
         <option value="$PROJECT_DIR$/swiper/scripts/gulpfile.js" />
-        <option value="$PROJECT_DIR$/singleplayer/multi.html" />
-        <option value="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" />
         <option value="$PROJECT_DIR$/singleplayer/assets/vmap.xml" />
+        <option value="$PROJECT_DIR$/singleplayer/multi.html" />
+        <option value="$PROJECT_DIR$/singleplayer/test.html" />
+        <option value="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" />
+        <option value="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" />
+        <option value="$PROJECT_DIR$/multi/multi.html" />
+        <option value="$PROJECT_DIR$/multi/assets/vmap.xml" />
+        <option value="$PROJECT_DIR$/multi/multi/js/multi.js" />
       </list>
     </option>
   </component>
@@ -387,32 +338,26 @@
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apache" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apache" type="b2602c69:ProjectViewProjectNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
-              <item name="singleplayer" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
+              <item name="multi" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,7 +374,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535993930279" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536005984645" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -591,11 +536,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535993088502</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Separating single player with multi player.">
+      <created>1535994145761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535994145761</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168107000" />
+    <option name="totallyTimeSpent" value="180009000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -624,7 +576,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917318" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32917318" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2597504" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -672,10 +624,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/singleplayer/js/singleplayer.js" />
-    <entry file="file://$PROJECT_DIR$/swipe/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiper/demos/320-multiple-swipers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -707,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/scheduler/ablumJob.js" />
     <entry file="file://$PROJECT_DIR$/scheduler/r.js" />
     <entry file="file://$PROJECT_DIR$/scheduler/albums/albums.json" />
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js">
+    <entry file="file://$PROJECT_DIR$/multi/multi/js/swiper.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="11" column="20996" selection-start-line="11" selection-start-column="20996" selection-end-line="11" selection-end-column="20996" />
@@ -718,36 +666,36 @@
     <entry file="file://$PROJECT_DIR$/scheduler/updateJSON.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299859.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5299859.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5880">
           <caret column="392035" selection-start-column="392035" selection-end-column="392035" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5286127.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5286127.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="93550" selection-start-column="93550" selection-end-column="93550" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299850.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5299850.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5320682.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5320682.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5305619.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5305619.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322167.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5322167.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/46710998.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/46710998.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5322178.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5322178.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="62120" selection-start-column="62120" selection-end-column="62120" />
@@ -821,7 +769,7 @@
     <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/style.css" />
     <entry file="file://$PROJECT_DIR$/scheduler/albums/5305619.json" />
     <entry file="file://$PROJECT_DIR$/scheduler/albums/5368334.json" />
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/5299853.json">
+    <entry file="file://$PROJECT_DIR$/multi/assets/5299853.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret column="4959" selection-end-column="576216" />
@@ -842,7 +790,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css">
+    <entry file="file://$PROJECT_DIR$/multi/multi/css/swiper.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -883,55 +831,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/multi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js">
+    <entry file="file://$PROJECT_DIR$/multi/multi/js/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="5727" column="27" selection-start-line="5727" selection-start-column="27" selection-end-line="5727" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css">
+    <entry file="file://$PROJECT_DIR$/multi/assets/albums.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/assets/midroll.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="735">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#15;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/albums.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/midroll.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/assets/vmap.xml">
+    <entry file="file://$PROJECT_DIR$/multi/assets/vmap.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        <state relative-caret-position="360">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/multi/css/multi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer.bk/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/multi/js/multi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,11 +2,11 @@ var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
 var master = [];
 var firstAlbum = "";
 var masterData;
-var master = {playerList:[], playlists:[]};
+var master = {info:{isMulti:false}, playerList:[], playlists:[]};
 
 !function () {
     var image = Math.floor(Math.random() * 3)+1;
-    var imgSrc = '/singleplayer/assets/loading-'+image+'.jpg';
+    var imgSrc = '/multi/assets/loading-'+image+'.jpg';
     var doc = document.getElementById("image");
     var x = document.createElement("IMG");
     x.setAttribute("src", imgSrc);
@@ -16,7 +16,7 @@ var master = {playerList:[], playlists:[]};
 
 window.addEventListener("load", function(){
     if(document.getElementById('loading-image')) {
-        document.getElementById("loading-image").src = "/singleplayer/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
+        document.getElementById("loading-image").src = "/multi/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
         setTimeout(function () {
             document.getElementById("loading-image").style.display = "block";
         }, 1);
@@ -32,10 +32,15 @@ window.addEventListener("load", function(){
     doc.parentNode.replaceChild(newItem, doc);
 });
 
+
+// START ---- shared code [single, multi]
+// START ---- shared code [single, multi]
+// START ---- shared code [single, multi]
+
 function loadLocalJSON(data, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', '/singleplayer/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', '/multi/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText, data);
@@ -71,7 +76,21 @@ function getVid(pl){
         ]};
     return vid;
 }
+function addJavascript(jsname,pos) {
+    var th = document.getElementsByTagName(pos)[0];
+    var s = document.createElement('script');
+    s.setAttribute('type','text/javascript');
+    s.setAttribute('src',jsname);
+    th.appendChild(s);
+}
+addJavascript('https://code.jquery.com/jquery-3.3.1.min.js','head');
 
+// END ----- Shared code [single, multi]
+// END ----- Shared code [single, multi]
+// END ----- Shared code [single, multi]
+
+
+// Get playlist video links
 function init(data, playJson) {
     var firstVid = null;
     var firstVidIndex = null;
@@ -93,14 +112,12 @@ function init(data, playJson) {
         playlist.playlist.splice(firstVidIndex, 1);
         playlist.playlist.unshift(firstVid);
     }
+    //save all playlists
     master.playlists[data.albumId] = playlist.playlist;
     loadPlaylistDisplay(playlist, data, 'player', data.albumId);
 };
 
-// var m;
-// var playerList = [];
-
-function loadPlaylistDisplay(playlist, data, htmlId, albumId){
+function loadPlaylistDisplay(playlist, data, htmlId, albumId, skipLoad){
 
     var myVar = setInterval(function(){
         if(!jwplayer){
@@ -109,11 +126,13 @@ function loadPlaylistDisplay(playlist, data, htmlId, albumId){
                 playlist: playlist,
                 advertising: {
                     client: "vast",
-                    schedule: data.isAds? (data.randomAds ? "/singleplayer/assets/vmap.xml": "/singleplayer/assets/vmap2.xml"):""
+                    schedule: data.isAds? (data.randomAds ? "/multi/assets/vmap.xml": "/multi/assets/vmap2.xml"):""
                 },
                 autostart: data.isStart
             });
-            loadCarousel(playlist, "swiper-playlist", ".swiper-container", ".swiper-button-next", ".swiper-button-prev", albumId);
+            if(skipLoad === undefined) {
+                loadCarousel(playlist, "swiper-playlist", ".swiper-container", ".swiper-button-next", ".swiper-button-prev", albumId);
+            }
             clearInterval(myVar);
         }
     } ,1000);
@@ -135,6 +154,7 @@ function isMobile() {
 }
 
 function loadCarousel(playlist, id001, id002, id003, id004, albumId){
+
     var doc = document.getElementById(id001);
     var html = '';
     var count = 1;
@@ -155,7 +175,7 @@ function loadCarousel(playlist, id001, id002, id003, id004, albumId){
 
     var next = '';
     var swiper = new Swiper(id002, {
-        slidesPerView: 2,
+        slidesPerView: master.info.isMulti ? 5 :2,
         spaceBetween: 10,
         pagination: {
             // el: '.swiper-pagination',
@@ -171,10 +191,9 @@ function loadCarousel(playlist, id001, id002, id003, id004, albumId){
         var e3 = document.getElementById(str);
 
         e3.addEventListener("click", function (w) {
+
             //hide all players
-
             var vids = document.getElementsByTagName('video')
-
             for( var i = 0; i < vids.length; i++ ){
                 vids.item(i).src = '';
             }
@@ -190,7 +209,9 @@ function loadCarousel(playlist, id001, id002, id003, id004, albumId){
             if(playerCurrent) {
                 playerCurrent.classList.remove("hidden");
                 playerCurrent.classList.add("visible");
+                $('html, body').animate({ scrollTop: playerCurrent.offsetTop }, 'slow');
             }
+
             //get the video index for playlist
             var index = this.dataset.mediaid - 1;
             //get playlist for this album
@@ -217,6 +238,7 @@ function loadCarousel(playlist, id001, id002, id003, id004, albumId){
 function loadMultipleCarousel(data){
     var albums = {list: data.albumId};
     var firstCarousel = data.albumId[0];
+    master.info.isMulti = true;
 
     // add album title
     firstAlbum = firstCarousel.title;
@@ -226,7 +248,7 @@ function loadMultipleCarousel(data){
 
     var matches = document.getElementsByClassName('swiper-container');
     var doc = matches[0];
-    // for (var i=0; i<matches.length; i++) { }
+
     albums.list.splice(0, 1);
 
     albums.list.forEach( function(pl){
@@ -238,13 +260,13 @@ function loadMultipleCarousel(data){
         player.innerHTML = '<div id="player'+pl.id+'" style="position: relative">hello</div>';
         // player.style.display = "none";
 
-        loadPlaylistDisplay(playlist, masterData, 'player'+pl.id, pl.id);
+        loadPlaylistDisplay(playlist, masterData, 'player'+pl.id, pl.id, true);
 
         var titleId = 'carousel'+pl.id;
         var newItem = document.createElement("div");
         newItem.setAttribute("id", titleId);
         newItem.setAttribute("class", "carousel001");
-        var textnode = document.createTextNode(pl.title);
+        var textnode = document.createTextNode(pl.title +' '+pl.id);
         newItem.appendChild(textnode);
         doc.parentNode.insertBefore(newItem, doc.nextSibling);
         newItem.parentNode.insertBefore(player, doc.nextSibling);
@@ -267,9 +289,6 @@ function loadMultipleCarousel(data){
                 var vid = getVid(pl);
                 play.playlist.push(vid);
             });
-            // console.log(data)
-            // console.log(play.playlist)
-            // console.log('-------------')
             master.playlists[data.albumId] = play.playlist;
 
             loadCarousel(play, "swiper-playlist"+data.albumId,
