@@ -3,9 +3,9 @@
 //all updates saved to albums/*.json
 
 var playlist = { title: "Ad Test", kind: "MANUAL", playlist: [] };
-var accessToken1 = '8aeb6aa949835168b5d8c1b863227828';
-var accessToken2 = '6d9e10dd242b50511b1a2f7aa920cb78';
-var accessToken3 = 'c25a2dcaf09f8625bada29935179926d';
+var accessToken = '8aeb6aa949835168b5d8c1b863227828';
+// var accessToken = '6d9e10dd242b50511b1a2f7aa920cb78';
+// var accessToken = 'c25a2dcaf09f8625bada29935179926d';
 var userId = 46710998;
 
 var fs = require('fs');
@@ -26,9 +26,19 @@ var options = {
         'User-Agent': 'request',
         'Accept': 'application/vnd.vimeo.*+json;version=3.4',
         'Content-Type': 'application/vnd.vimeo.*+json',
-        'Authorization': 'Bearer '+accessToken2
+        'Authorization': 'Bearer '+accessToken
     }
 };
+
+function logError(error, response, body) {
+    console.log('ERROR --------------------------------------------------------');
+    console.log('Body:');
+    console.log(body);
+    console.log(response);
+    console.log('Error:');
+    console.log(error);
+    console.log('ERROR --------------------------------------------------------');
+}
 
 var albumMap = [];
 function callbackAlbum(error, response, body) {
@@ -44,14 +54,19 @@ function callbackAlbum(error, response, body) {
 
         //Add previous pages to this list of videos for album ID
         if(albumMap.hasOwnProperty(id)){
-            info.data = info.data.concat(albumMap[id]);
+            // info.data = info.data.concat(albumMap[id]);
+            info.data = albumMap[id].concat(info.data);
         }
         albumMap[id] = info.data;
 
         fs.writeFile('albums/'+id+'.json', JSON.stringify(info), function (err) {
-            if (err) throw err;
+            if (err) console.log(err);
             console.log('Created albumId: ' + id +' video count: '+ info.data.length);
         });
+    }
+    else{
+        console.log('67 ERROR --------------------------------------------------------');
+        logError(error, response, body);
     }
 }
 
@@ -60,20 +75,25 @@ function callback(error, response, body) {
         var info = JSON.parse(body);
         if(info.data){
             info.data.forEach(function(albumURI){
-                var url = 'https://api.vimeo.com'+ albumURI.uri+'/videos';
+                // if(albumURI.uri.indexOf('5299853')>-1) {
+                var url = 'https://api.vimeo.com' + albumURI.uri + '/videos?sort=manual';
                 console.log('--------------------------------------------------------');
-                console.log('Fetching Album: '+ albumURI.name);
+                console.log('Fetching Album: ' + albumURI.name);
                 options.url = url;
                 request(options, callbackAlbum);
+                // }
             })
         }
     }
 
-    if (!error && response.statusCode == 429) {
+    else if (!error && response.statusCode == 429) {
         console.log('--------------------------------------------------------');
         console.log(figlet.textSync('TOO MANY REQUEST'));
         console.log('To Vimeo server. You\'ll need to wait 24 hours or toggle users.');
         console.log('--------------------------------------------------------');
+    }else{
+        console.log('92 ERROR --------------------------------------------------------');
+        logError(error, response, body);
     }
 }
 
