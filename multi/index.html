@@ -2,15 +2,7 @@
 <link rel="stylesheet" href="/multi/multi/css/multi.css?cb=002">
 <link rel="stylesheet" href="/multi/multi/css/swiper.min.css?cb=002">
 
-<div id="adplayer">
-    <div id="player" style="position: relative">
-        <div id="image">
-        </div>
-        <img id="loading-image" class="loading-image" src="" alt="">
-    </div>
-</div>
-<br/>
-<div class="swiper-container">
+<div class="swiper-container" style="display: none">
     <div id="swiper-playlist" class="swiper-wrapper"> </div>
     <!-- Add Pagination -->
     <!--<div class="swiper-pagination"></div>-->
@@ -49,9 +41,7 @@ var albumList = [
 ];
     // First video to play (Vimeo video id)
     var firstVideoId = 232897851;
-    // Vimeo album id
-    // var albumId = 5299859;
-    // var albumId = 5299853;
+    // Vimeo album id list
     var albumId = albumList;
     // Auto start video on page load
     var autoStart = false;

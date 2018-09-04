@@ -4,43 +4,10 @@ var firstAlbum = "";
 var masterData;
 var master = {info:{isMulti:false}, playerList:[], playlists:[]};
 
-!function () {
-    var image = Math.floor(Math.random() * 3)+1;
-    var imgSrc = '/multi/assets/loading-'+image+'.jpg';
-    var doc = document.getElementById("image");
-    var x = document.createElement("IMG");
-    x.setAttribute("src", imgSrc);
-    x.setAttribute("width", "100%");
-    doc.appendChild(x);
-}();
-
-window.addEventListener("load", function(){
-    if(document.getElementById('loading-image')) {
-        document.getElementById("loading-image").src = "/multi/assets/Professor-of-Rock-Footer-Icon.png?cb=125";
-        setTimeout(function () {
-            document.getElementById("loading-image").style.display = "block";
-        }, 1);
-    }
-
-    //replace br with div for title of first album
-    var doc = document.getElementsByTagName("br")[0];
-    var newItem = document.createElement("div");
-    newItem.setAttribute("id", "carousel1");
-    newItem.setAttribute("class", "carousel001");
-    var textnode = document.createTextNode(firstAlbum);
-    newItem.appendChild(textnode);
-    doc.parentNode.replaceChild(newItem, doc);
-});
-
-
-// START ---- shared code [single, multi]
-// START ---- shared code [single, multi]
-// START ---- shared code [single, multi]
-
 function loadLocalJSON(data, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', '/multi/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', '/singleplayer/assets/'+data.albumId+'.json', true); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText, data);
@@ -85,11 +52,6 @@ function addJavascript(jsname,pos) {
 }
 addJavascript('https://code.jquery.com/jquery-3.3.1.min.js','head');
 
-// END ----- Shared code [single, multi]
-// END ----- Shared code [single, multi]
-// END ----- Shared code [single, multi]
-
-
 // Get playlist video links
 function init(data, playJson) {
     var firstVid = null;
@@ -106,15 +68,6 @@ function init(data, playJson) {
         count = (count+1);
         playlist.playlist.push(vid);
     });
-
-    //Set first song
-    if(firstVid){
-        playlist.playlist.splice(firstVidIndex, 1);
-        playlist.playlist.unshift(firstVid);
-    }
-    //save all playlists
-    master.playlists[data.albumId] = playlist.playlist;
-    loadPlaylistDisplay(playlist, data, 'player', data.albumId);
 };
 
 function loadPlaylistDisplay(playlist, data, htmlId, albumId, skipLoad){
@@ -126,7 +79,7 @@ function loadPlaylistDisplay(playlist, data, htmlId, albumId, skipLoad){
                 playlist: playlist,
                 advertising: {
                     client: "vast",
-                    schedule: data.isAds? (data.randomAds ? "/multi/assets/vmap.xml": "/multi/assets/vmap2.xml"):""
+                    schedule: data.isAds? (data.randomAds ? "/singleplayer/assets/vmap.xml": "/singleplayer/assets/vmap2.xml"):""
                 },
                 autostart: data.isStart
             });
@@ -249,7 +202,7 @@ function loadMultipleCarousel(data){
     var matches = document.getElementsByClassName('swiper-container');
     var doc = matches[0];
 
-    albums.list.splice(0, 1);
+    // albums.list.splice(0, 1);
 
     albums.list.forEach( function(pl){
 
@@ -266,7 +219,7 @@ function loadMultipleCarousel(data){
         var newItem = document.createElement("div");
         newItem.setAttribute("id", titleId);
         newItem.setAttribute("class", "carousel001");
-        var textnode = document.createTextNode(pl.title +' '+pl.id);
+        var textnode = document.createTextNode(pl.title);
         newItem.appendChild(textnode);
         doc.parentNode.insertBefore(newItem, doc.nextSibling);
         newItem.parentNode.insertBefore(player, doc.nextSibling);
@@ -296,7 +249,5 @@ function loadMultipleCarousel(data){
                 ".swiper-button-next"+data.albumId,
                 ".swiper-button-prev"+data.albumId, data.albumId);
         });
-
     });
-
 }
