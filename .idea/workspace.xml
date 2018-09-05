@@ -1,47 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a69eac19-72ea-422a-9e01-f3697080d85f" name="Default" comment="Multi row carousel: added animate scroll to video focus, additional videos per row.">
+    <list default="true" id="a69eac19-72ea-422a-9e01-f3697080d85f" name="Default" comment="removed top opened video and treating top row as all others.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/multi/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multi/multi/js/multi.js" beforeDir="false" afterPath="$PROJECT_DIR$/multi/multi/js/multi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/46710998.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/46710998.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5286127.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5286127.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5299850.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299850.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5299853.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299853.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5299859.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299859.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5305619.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5305619.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5320682.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5320682.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5322167.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322167.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5322178.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322178.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329644.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329644.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329647.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329647.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329648.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329648.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329652.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329652.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329653.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329653.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329661.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329661.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/5329669.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329669.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/716429651_960x540.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/716429651_960x540.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/Professor-of-Rock-Footer-Icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/Professor-of-Rock-Footer-Icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/albums.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/albums.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/highlight.png" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/highlight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/jwplayer-rectangle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/jwplayer-rectangle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/loading-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/loading-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/loading-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/loading-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/loading-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/loading-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/midroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/midroll.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/overlay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/overlay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/postroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/postroll.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/preroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/preroll.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/sintel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/sintel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/timeline.png" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/timeline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/assets/vmap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/vmap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/singleplayer/css/singleplayer.css" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/css/singleplayer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/singleplayer/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/css/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/singleplayer/js/singleplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/singleplayer/js/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singleplayer.bk/singleplayer/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/singleplayer/js/swiper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5286127.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5286127.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299850.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299850.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299853.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299853.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5299859.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5299859.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5305619.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5305619.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5320682.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5320682.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5322167.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322167.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5322178.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5322178.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329644.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329644.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329647.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329647.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329652.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329652.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329653.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329653.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleplayer/assets/5329661.json" beforeDir="false" afterPath="$PROJECT_DIR$/singleplayer/assets/5329661.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,15 +28,16 @@
     <session id="-787488602">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,10 +64,10 @@
         <counts>
           <entry key="css" value="2865" />
           <entry key="html" value="3671" />
-          <entry key="js" value="27207" />
+          <entry key="js" value="27642" />
           <entry key="json" value="42" />
           <entry key="ts" value="27" />
-          <entry key="txt" value="464" />
+          <entry key="txt" value="525" />
           <entry key="xml" value="68" />
         </counts>
       </usages-collector>
@@ -100,8 +76,8 @@
           <entry key="CSS" value="2865" />
           <entry key="HTML" value="3671" />
           <entry key="JSON" value="42" />
-          <entry key="JavaScript" value="27207" />
-          <entry key="PLAIN_TEXT" value="464" />
+          <entry key="JavaScript" value="27642" />
+          <entry key="PLAIN_TEXT" value="525" />
           <entry key="TypeScript" value="27" />
           <entry key="XML" value="68" />
         </counts>
@@ -113,11 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/multi/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -143,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/multi/multi/js/multi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="231">
+              <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -310,10 +283,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1245" />
     <option name="y" value="23" />
-    <option name="width" value="1315" />
-    <option name="height" value="1374" />
+    <option name="width" value="1680" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -322,7 +294,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,13 +341,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536034665616" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536034820498" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -466,7 +438,9 @@
       <workItem from="1535586212004" duration="6787000" />
       <workItem from="1535598996797" duration="2903000" />
       <workItem from="1535991258491" duration="848000" />
-      <workItem from="1536031500560" duration="3043000" />
+      <workItem from="1536031500560" duration="3619000" />
+      <workItem from="1536062965331" duration="1208000" />
+      <workItem from="1536103608530" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="randomizing loading bg image">
       <created>1534003747960</created>
@@ -552,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536006120129</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="removed top opened video and treating top row as all others.">
+      <created>1536034797492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536034797492</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183214000" />
+    <option name="totallyTimeSpent" value="185746000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -568,10 +549,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1245" y="23" width="1315" height="1374" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="984" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12568735" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06471307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -585,7 +565,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32917318" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.31838566" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2597504" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -620,7 +600,8 @@
     <MESSAGE value="multi player and fixed album sync to correct page order consistent with 'manual' playlist" />
     <MESSAGE value="Separating single player with multi player." />
     <MESSAGE value="Multi row carousel: added animate scroll to video focus, additional videos per row." />
-    <option name="LAST_COMMIT_MESSAGE" value="Multi row carousel: added animate scroll to video focus, additional videos per row." />
+    <MESSAGE value="removed top opened video and treating top row as all others." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed top opened video and treating top row as all others." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,6 +822,27 @@
     <entry file="file://$PROJECT_DIR$/multi/assets/midroll.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi/multi/css/swiper.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/multi/assets/vmap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -883,38 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multi/multi/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleplayer/singleplayer/js/singleplayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multi/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multi/multi/js/multi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="231">
+          <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />

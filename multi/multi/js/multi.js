@@ -128,7 +128,7 @@ function loadCarousel(playlist, id001, id002, id003, id004, albumId){
 
     var next = '';
     var swiper = new Swiper(id002, {
-        slidesPerView: master.info.isMulti ? 5 :2,
+        slidesPerView: isMobile() ? 2 : 5,
         spaceBetween: 10,
         pagination: {
             // el: '.swiper-pagination',
@@ -251,3 +251,7 @@ function loadMultipleCarousel(data){
         });
     });
 }
+
+
+
+
